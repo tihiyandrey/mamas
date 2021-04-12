@@ -1,0 +1,124 @@
+.advertising{
+    color:$Brown-subheader-color;
+    padding: 50px 54px;
+    background: #F7F2EF;
+    text-align: center;
+    @media screen and (max-width: 767px){
+        padding: 60px 34px;
+    }
+    @media screen and (max-width: 374px){
+        padding: 60px 20px;
+    }
+    .container{
+        display: flex;
+    }
+    &__tagline{
+        @include adaptive-fonts(28, 20);
+        text-align: center;
+        letter-spacing: 0.01em;
+        @include fontz (50px, normal, normal);
+        @media screen and (max-width: 374px){
+            line-height: 32px;
+        }
+    }
+    &__first{
+        margin: 10px 0 30px;
+        h3{
+            width: 70%;
+            margin: auto;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            @media screen and (max-width: 767px){
+                width: 100%;
+            }
+        }
+    }
+    .advertising__btn{
+        margin-top: 30px;
+        @media screen and (max-width: 767px){
+            margin-top: 20px;
+        }
+    }
+    &__second{
+        padding-top: 120px;
+        position: relative;
+        @media screen and (max-width: 767px){
+            padding: 60px 34px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 1200px){
+               flex-direction: column;
+               align-items: center;
+            }
+        }
+        .small-photo{
+            max-width: 260px;
+            position: absolute;
+            z-index: 2;
+            top: -40px;
+            @media screen and (max-width: 1200px){
+                left: 6px;
+                width: 40%;
+             }
+        }
+        .bigger-photo{
+            max-width: 380px;
+            position: absolute;
+            z-index: 1;
+            top: 30px;
+            right: 0;
+            @media screen and (max-width: 1200px){
+                position: relative;
+                display: flex;
+                width: 60%;
+             }
+        }
+        h2{
+            letter-spacing: 0.02em;
+        }
+        .advertising__btn{
+            margin-bottom: 136px;
+            @media screen and (max-width: 767px){
+                margin-bottom: 40px;
+            }
+        }
+        .pos-element__pos-right{
+            top: 0;
+            @media screen and (max-width: 767px){
+                display: none;
+             }
+        }
+    }
+    &__second-img, &__second-content{
+        width: 45%;
+        @media screen and (max-width: 1200px){
+            width: 70%;
+         }
+         @media screen and (max-width: 600px){
+            width: 100%;
+         }
+    }
+    &__second-img{
+        position: relative;
+        @media screen and (max-width: 1200px){
+            order: 1;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+         }
+        img{
+            width: 100%;
+        }
+    }
+    &__second-description{
+        font-size: 14px;
+        color: $body-font-color;
+        @include fontz (21px, normal, normal);
+        @media screen and (max-width: 1200px){
+            order: 0;
+         }
+    }
+    
+}

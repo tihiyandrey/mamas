@@ -1,0 +1,198 @@
+.main-banner{
+    background-image: url("../img/main_banner_bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 0!important;
+    &__wrap{
+        position: relative;
+    }
+    .pos-element{
+        bottom: 0px;
+        &__pos-left{
+            @media screen and (max-width: 767px){
+                display: none;
+            }
+        }
+        &__pos-right{
+            @media screen and (max-width: 767px){
+                right: -28px;
+            }
+        }
+    }
+    .container{
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+    }
+
+}
+.main-banner-content{
+    margin: auto;
+    width: 50%;
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
+    h1{
+        padding: 154px 0 13px;
+    }
+    p{
+        @include fontz (21px, normal, normal);
+        font-size: 14px;
+        @media screen and (max-width: 767px){
+            width: 74%;
+            margin: auto;
+        }
+    }
+    button{
+        margin: 42px 0 256px;
+    }
+}
+.description{
+    background: $light-brown;
+    position: relative;
+    &__content{
+        width: 54%;
+        margin: auto;
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
+    }
+    &__title{
+        color: $Brown-subheader-color;
+        @include fontz (15px, 500, normal);
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        text-align: center;
+        @media screen and(max-width: 767px){
+            margin-left: 24px;
+        }
+    }
+    &__text{
+        @include fontz (34px, normal, normal);
+        @include adaptive-fonts(20, 16);
+        text-align: center;
+    }
+    span{
+        width: 40px;
+        height: 1px;
+        background: #D0C4BB;
+        margin: 24px auto 15px;
+        text-align: center;
+        display: block;
+        &:after{
+            position: absolute;
+           
+            
+        }
+    }
+    .underline-btn{
+        margin-top: 50px;
+    }
+    .pos-element__pos-left{
+        bottom: 96px;
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+    .pos-element__pos-right{
+        top: 52px;
+        @media screen and (max-width: 767px){
+           top: 0;
+        }
+        img{
+            @media screen and (max-width: 767px){
+                height: 270px;
+                width: auto;
+             }
+        }
+    }
+}
+.banner-block{
+    &__bg{
+        position: relative;
+        margin-bottom: 60px;
+        @media screen and (max-width: 1100px){
+            background: $light-brown;
+            margin-bottom: 20px;
+        }
+    }
+    &__img{
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        @media screen and (max-width: 1100px){
+            position: relative;  
+        }
+        h2{
+            color: #FFFFFF;
+            margin-top: 154px;
+            @media screen and (max-width: 1100px){
+                margin-top: 30px;
+                color: $fonts-color;
+            }
+        }
+        p{
+            width: 35%;
+            font-size: 14px;
+            text-align: center;
+            color: $light-brown;
+            @include fontz (21px, normal, normal);
+            margin: 12px auto 30px;
+            @media screen and (max-width: 1100px){
+                margin: 12px auto 20px;
+                width: 71%;
+                color: $Brown-subheader-color;
+            }
+        }
+        .underline-btn{
+            // margin: 125px auto 45px;
+            @media screen and (max-width: 1100px){
+                display: none;
+            }
+        }
+    }
+    &__wrap-btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+        @media screen and (max-width: 1100px){
+            padding-bottom: 40px;
+        }
+        @media screen and (max-width: 374px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .double-btn{
+            margin: 0 5px;
+            @media screen and (max-width: 374px){
+                margin-bottom: 10px;
+            }
+            &_white{
+                @media screen and (max-width: 767px){
+                    background: none;
+                }
+            }
+        }
+    }
+    .underline-btn{
+        // margin-top: 60px;
+        @media screen and (max-width: 1100px){
+            margin-top: 30px;
+        }
+    }
+   
+}
+
