@@ -14,20 +14,22 @@
     }
     &__tagline{
         @include adaptive-fonts(28, 20);
-        text-align: center;
         letter-spacing: 0.01em;
+        font-family: 'MarckScript', sans-serif;
         @include fontz (50px, normal, normal);
+        margin-bottom: 10px;
         @media screen and (max-width: 374px){
             line-height: 32px;
         }
     }
     &__first{
-        margin: 10px 0 30px;
+        // margin: 10px 0 59px;
         h3{
-            width: 70%;
+            width: 51%;
             margin: auto;
             letter-spacing: 0.08em;
             text-transform: uppercase;
+            font-family: 'FontsFree', sans-serif;
             @media screen and (max-width: 767px){
                 width: 100%;
             }
@@ -42,6 +44,7 @@
     &__second{
         padding-top: 120px;
         position: relative;
+        margin-bottom: -110px;
         @media screen and (max-width: 767px){
             padding: 60px 34px;
         }
@@ -91,7 +94,7 @@
              }
         }
     }
-    &__second-img, &__second-content{
+    &__second-img{
         width: 45%;
         @media screen and (max-width: 1200px){
             width: 70%;
@@ -99,6 +102,16 @@
          @media screen and (max-width: 600px){
             width: 100%;
          }
+    }
+    &__second-content{
+        text-align: left;
+        width: 39%;
+        h3{
+            text-align: left;
+        }
+        .advertising__tagline{
+            margin-bottom: 20px;
+        }
     }
     &__second-img{
         position: relative;

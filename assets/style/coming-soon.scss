@@ -27,7 +27,7 @@
 .coming-soon-item{
     position: relative;
     width: 49%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     @media screen and (max-width: 768px){
         width: 100%;
         overflow: hidden;
@@ -46,10 +46,10 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: #FFFFFF;
-        width: 70%;
+        width: 69%;
     }
     p{
-        width: 74%;
+        width: 84%;
         font-size: 14px;
         text-align: center;
         color: $light-brown;

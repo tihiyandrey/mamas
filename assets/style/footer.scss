@@ -1,0 +1,148 @@
+.footer{
+    background: #5F5656;
+    padding: 45px 0 24px;
+    @media screen and (max-width: 767px){
+        padding: 20px;
+    }
+    &__wrap{
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        @media screen and (max-width: 1000px){
+            width: 40px;
+        }
+
+    }
+    &__wrap-link{
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+        @media screen and (max-width: 760px){
+            width: 80%;
+         }
+         @media screen and (max-width: 500px){
+           width: 100%;
+           justify-content: flex-start;
+        }
+    }
+    &__wrap-list{
+        margin-bottom: 80px;
+        @media screen and (max-width: 760px){
+            margin-bottom: 35px;
+            padding-top: 35px;
+        }
+        @media screen and (max-width: 500px){
+            width: 50%;
+            padding-top: 75px;
+         }
+        p{
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #BEB9B9;
+            @include fontz (14px, 500, normal);
+        }
+    }
+    &__list-wrap{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    &__list-item{
+        @include fontz (36px, normal, normal);
+        font-size: 13px;
+        color: #FAFAFA;
+        margin-bottom: 5px;
+        transition: 0.3s all;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .socila-wrap__item{
+        svg{
+            path{
+                fill:#BEB9B9;;
+            }
+            rect{
+                fill:#BEB9B9;;
+            }
+        }
+        &:hover{
+            svg{
+                path{
+                    fill: #FFFFFF;
+                }
+                rect{
+                    fill: #FFFFFF;
+                }
+            }
+        }
+    }
+    &__form{
+        margin: 20px 0 32px;
+        min-width: 400px;
+        input{
+            background: #706262;
+            border: 1px solid #706262;
+            box-sizing: border-box;
+            border-radius: 2px;
+            font-size: 13px;
+            @include fontz (13px, normal, normal);
+            padding: 11px 16px 12px;
+            margin-right: 5px;
+            width: 273px;
+            box-sizing: border-box;
+            &:focus{
+                background: #FFFFFF;
+                border: 1px solid #958585;
+            }
+            &::placeholder{
+                font-size: 13px;
+                color: #FFFFFF;
+                @include fontz (15px, normal, normal);
+
+            }
+        }
+        button{
+            background: #827474;
+            border-radius: 2px;
+            padding: 13px 27px;
+            font-size: 12px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            @include fontz (14px, 500, normal);
+            @media screen and (max-width: 374px){
+                padding: 13px 20px;
+           }
+        }
+    }
+    &__signature{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        color: #8F8888;
+        @include fontz (32px, normal, normal);
+    }
+    &__wrap-social{
+        width: 35%;
+        @media screen and (max-width: 760px){
+           width: auto;
+           padding-top: 0;
+           text-align: left;
+        }
+        @media screen and (max-width: 760px){
+             width: 100%;
+             margin: 0 0 43px;
+        }
+    }
+}

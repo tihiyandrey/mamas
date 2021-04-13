@@ -36,7 +36,7 @@
         width: 100%;
     }
     h1{
-        padding: 154px 0 13px;
+        padding: 162px 0 13px;
     }
     p{
         @include fontz (21px, normal, normal);
@@ -54,7 +54,7 @@
     background: $light-brown;
     position: relative;
     &__content{
-        width: 54%;
+        width: 50%;
         margin: auto;
         @media screen and (max-width: 767px){
             width: 100%;
@@ -76,6 +76,7 @@
         @include fontz (34px, normal, normal);
         @include adaptive-fonts(20, 16);
         text-align: center;
+        font-family: 'FontsFree', sans-serif;
     }
     span{
         width: 40px;
@@ -115,11 +116,18 @@
 .banner-block{
     &__bg{
         position: relative;
-        margin-bottom: 60px;
         @media screen and (max-width: 1100px){
             background: $light-brown;
-            margin-bottom: 20px;
         }
+    }
+    &__first-banner{
+        margin-bottom: 60px;
+    }
+    &__second-banner{
+        margin-top: 60px;
+    }
+    .underline-btn{
+        margin: 63px auto 60px;
     }
     &__img{
         img{

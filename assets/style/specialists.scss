@@ -4,10 +4,10 @@
         text-align: center;
     }
     &__wrap-content{
-        margin: 50px 0;
+        margin: 50px 0 10px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         @media screen and (max-width: 767px){
             margin: 20px 0 40px;
         }
@@ -19,7 +19,7 @@
         height: 120px;
         overflow: hidden;
         transition: 0.3s all;
-        margin-bottom: 40px;
+        margin:0 10px 40px;
         @media screen and (max-width: 768px){
             width: 100%;
             margin-bottom: 17px;
