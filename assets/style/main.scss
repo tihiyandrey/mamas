@@ -56,7 +56,7 @@ body{
 h1{
     @include adaptive-fonts(60, 35);
     font-family: 'FontsFree', sans-serif;
-    @include fontz (60px, 400, normal);
+    @include fontz (68px, 400, normal);
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -114,6 +114,9 @@ h6{
     }
     @media screen and (max-width: 1000px){
         width: 90%;
+     }
+     @media screen and (max-width: 450px){
+        width: 96%;
      }
 }
 .section{

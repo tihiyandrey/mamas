@@ -7,32 +7,55 @@
     &__wrap{
         display: flex;
         position: relative;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-    }
-    &__logo{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60px;
         @media screen and (max-width: 1000px){
+            justify-content: center;
+         }
+         @media screen and (max-width: 767px){
+            justify-content: flex-start;
+         }
+        >:nth-child(1){
+            width: 11%;
+            @media screen and (max-width: 767px){
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            a{
+                display: flex;
+            }
+        }
+    }
+    
+    &__logo{
+        width: 60px;
+        @media screen and (max-width: 767px){
             width: 40px;
+            position: absolute;
+            
         }
 
     }
     &__wrap-link{
         display: flex;
-        width: 40%;
-        justify-content: space-around;
-        @media screen and (max-width: 760px){
-            width: 80%;
+        width: 45%;
+        justify-content: flex-start;
+        @media screen and (max-width: 1000px){
+            width: 64%;
+            justify-content: center;
          }
-         @media screen and (max-width: 500px){
+         @media screen and (max-width: 767px){
            width: 100%;
            justify-content: flex-start;
+           margin-top: 50px;
         }
+        @media screen and (max-width: 500px){
+            margin-top: 5px;
+         }
     }
     &__wrap-list{
+        width: 38%;
         margin-bottom: 80px;
         @media screen and (max-width: 760px){
             margin-bottom: 35px;
@@ -88,7 +111,6 @@
     }
     &__form{
         margin: 20px 0 32px;
-        min-width: 400px;
         input{
             background: #706262;
             border: 1px solid #706262;
@@ -100,6 +122,9 @@
             margin-right: 5px;
             width: 273px;
             box-sizing: border-box;
+            @media screen and (max-width: 470px){
+                width: 60%;
+             }
             &:focus{
                 background: #FFFFFF;
                 border: 1px solid #958585;
@@ -108,6 +133,9 @@
                 font-size: 13px;
                 color: #FFFFFF;
                 @include fontz (15px, normal, normal);
+                @media screen and (max-width: 370px){
+                    font-size: 11px;
+                 }
 
             }
         }
@@ -134,7 +162,11 @@
         @include fontz (32px, normal, normal);
     }
     &__wrap-social{
-        width: 35%;
+        width: 390px;
+        // @media screen and (max-width: 1000px){
+        //     width: 64%;
+        //     justify-content: center;
+        //  }
         @media screen and (max-width: 760px){
            width: auto;
            padding-top: 0;

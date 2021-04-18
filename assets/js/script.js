@@ -5,19 +5,41 @@ const specialistsPopUp = document.getElementsByClassName('specialists-pop-up'),
       blockMobileOpen = document.querySelectorAll('.specialists__item'),
       popUp = document.querySelectorAll('.pop-up'),
       popUpRemind = document.querySelectorAll('.pop-up-remind'),
-      openRemind = document.querySelectorAll('.open-remind');
+      openRemind = document.querySelectorAll('.open-remind'),
+      accordionDesktop = document.querySelectorAll('.accordion_desktop'),
+      accordionDefault = document.querySelectorAll('.accordion_default'),
+      accordion = document.querySelectorAll('.accordion'),
+      accordionItemSecond = document.querySelectorAll('.accordion__item-second'),
+      accordionOPenBtn = document.querySelectorAll('.accordion__open-btn');
 
-blockMobileOpen.forEach((element, i) => {
+accordionDesktop.forEach((element, i) => {
     element.addEventListener('click', () => {
         if (window.screen.width >= 768){
-            specialistsPopUp[0].classList.add('pop-up_active');
-            blackout.classList.add('blackout_active');
+            accordionOpenPopUP();
         } else{
-            btnMobileOpen[i].classList.toggle('specialists__mobile-open-btn_active');
-            element.classList.toggle('specialists__item_mobile-open');
+            openAccordion(element, i);
         }
     });
 });
+
+accordionDefault.forEach((element, i) => {
+    element.addEventListener('click', () =>{ 
+    openAccordion(element, i);
+    })
+});
+
+function openAccordion(element, i) {
+    accordionItemSecond[i].classList.toggle('accordion__item-second_open');
+    accordionOPenBtn[i].classList.toggle('accordion__open-btn_active');
+    element.classList.toggle('accordion_open');
+    console.log(accordionItemSecond[i]);
+
+}
+function accordionOpenPopUP() {
+    specialistsPopUp[0].classList.add('pop-up_active');
+    blackout.classList.add('blackout_active');
+}
+
 popUpClose.forEach((element, i) => {
     element.addEventListener('click', () =>{
         blackout.classList.remove('blackout_active');
@@ -33,7 +55,7 @@ openRemind.forEach((element, i) => {
 
 const titleName = $('.advantages__first-item').html();
 function owlInitialize() {
-    if ($(window).width() < 769) {
+    if ($(window).width() < 1300) {
         $('.advantages__first-item').remove();
         $('.advantages__wrap').addClass("owl-carousel");
         $('.coming-soon__wrap').addClass("owl-carousel");
@@ -44,8 +66,11 @@ function owlInitialize() {
             stagePadding: 40,
             dots: true,
             responsive:{
-                600:{
+                900:{
                     items:3
+                },
+                600:{
+                    items:2
                 },
                 320:{
                     items:1

@@ -12,11 +12,16 @@
     .pos-element{
         bottom: 0px;
         &__pos-left{
+            left: -45px;
+            @media screen and (max-width: 1000px){
+                left: -78px;
+            }
             @media screen and (max-width: 767px){
                 display: none;
             }
         }
         &__pos-right{
+            right: -45px;
             @media screen and (max-width: 767px){
                 right: -28px;
             }
@@ -32,18 +37,39 @@
 .main-banner-content{
     margin: auto;
     width: 50%;
+    @media screen and (max-width: 1300px){
+        width: 61%;
+    }
+    @media screen and (max-width: 900px){
+        width: 62%;
+    }
     @media screen and (max-width: 767px){
-        width: 100%;
+        width: 80%;
+    }
+    @media screen and (max-width: 500px){
+        width: 90%;
     }
     h1{
         padding: 162px 0 13px;
+        @media screen and (max-width: 500px){
+            padding: 55px 0 13px;
+        }
     }
     p{
         @include fontz (21px, normal, normal);
         font-size: 14px;
+        @media screen and (max-width: 900px){
+            width: 90%;
+            margin: auto;
+        }
         @media screen and (max-width: 767px){
             width: 74%;
-            margin: auto;
+        }
+        @media screen and (max-width: 500px){
+            width: 68%;
+        }
+        @media screen and (max-width: 400px){
+            width: 90%;
         }
     }
     button{
@@ -147,6 +173,9 @@
         h2{
             color: #FFFFFF;
             margin-top: 154px;
+            @media screen and (max-width: 1300px){
+                margin-top: 65px;
+            }
             @media screen and (max-width: 1100px){
                 margin-top: 30px;
                 color: $fonts-color;
@@ -164,6 +193,9 @@
                 width: 71%;
                 color: $Brown-subheader-color;
             }
+            @media screen and (max-width: 500px){
+                width: 90%;
+            }
         }
         .underline-btn{
             // margin: 125px auto 45px;
@@ -176,8 +208,15 @@
         display: flex;
         justify-content: center;
         padding-bottom: 60px;
+        @media screen and (max-width: 1300px){
+            padding-bottom: 5px;
+        }
         @media screen and (max-width: 1100px){
             padding-bottom: 40px;
+        }
+        @media screen and (max-width: 400px){
+            justify-content: space-between;
+            padding: 0 20px 40px 20px;
         }
         @media screen and (max-width: 374px){
             flex-direction: column;

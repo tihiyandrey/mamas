@@ -9,92 +9,62 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        @media screen and (max-width: 1300px){
+            justify-content: space-between;
+        }
         @media screen and (max-width: 767px){
             margin: 20px 0 40px;
         }
     }
-    &__item{
-        width: 42.7%;
-        border-radius: 2px;
-        background: $light-brown;
-        height: 120px;
-        overflow: hidden;
-        transition: 0.3s all;
-        margin:0 10px 40px;
-        @media screen and (max-width: 768px){
-            width: 100%;
-            margin-bottom: 17px;
-            height: 84px;
+    .accordion_desktop{
+        width: 42.8%;
+        @media screen and (max-width: 1300px){
+            width: 47%;
         }
-        img{
+        @media screen and (max-width: 1050px){
+            width: 70%;
+            margin: 10px auto 17px;
+        }
+        @media screen and (max-width: 767px){
             width: 100%;
         }
-        &_mobile-open{
-            height: 377px;    
-        }
-    }
-    &__item-main{
-        display: flex;
-        flex-direction: row;
-        background: $light-brown;
-        cursor: pointer;
-        position: relative;
-    }
-    &__item-main-description{
-        width: 70%;
-        padding: 22px 0 22px 22px;
-        @media screen and (max-width: 768px){
-            width: 100%;
-            padding: 11px 0 11px 11px;
-        }
-        h5{
-            text-align: left;
-        }
-        p{
-            @include adaptive-fonts(14, 10);
-            color: #686563;
-            @include fontz (21px, normal, normal);
-            margin-top: 2px;
+       & .accordion{
+        &__item-main{
+            background: $light-brown;
             @media screen and (max-width: 768px){
-                line-height: 15px;
-                width: 85%;
+                background: #F7F2EF;
+                width: 100%;
+                height: 84px;
+            }
+            
+        }
+        &__item-main-description{
+            @media screen and (max-width: 1300px){
+                padding: 11px 0 11px 10px;
+            }
+            @media screen and (max-width: 768px){
+                width: 100%;
+                padding: 11px 0 11px 11px;
+            }
+            p{
+                @media screen and (max-width: 768px){
+                    line-height: 15px;
+                    width: 85%;
+                }
             }
         }
+        &__open-btn{
+            display: none;
+            @media screen and (max-width: 768px){
+                display: block;
+            }
+            &_active{
+                transform: translate(0, -50%) rotate(180deg);
+            }
+        }
+       }
     }
-    &__mobile-open-btn{
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translate(0, -50%);
-        transition: 0.3s all;
-        display: none;
-        @media screen and (max-width: 768px){
-            display: block;
-        }
-        &_active{
-            transform: translate(0, -50%) rotate(180deg);
-        }
-    }
-    &__mobile-item{
-        border-top: 1px solid #DFD8D4;
-        padding: 20px 13px 35px 12px;
-        transition: 0.3s all;
-        >:nth-child(1){
-            @include fontz (18px, 500, normal);
-            font-size: 13px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #726364;
-            margin-bottom: 8px;
-        }
-        :nth-child(2){
-            font-size: 13px;
-            @include fontz (21px, normal, normal);
-        }
-        &_active{
-            display: block;
-        }
-    }
+   
     .pos-element__pos-right{
         top: 0;
         @media screen and (max-width: 768px){

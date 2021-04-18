@@ -6,6 +6,9 @@
         padding: 40px 0 120px;
         .pos-element__pos-left{
             top: 0;
+            @media screen and (max-width: 1000px){
+                display: none;
+            }
         }
         &__second-banner {
             margin-top: 30px;
@@ -63,6 +66,9 @@
                     width: 100%;
                     padding: 30px 40px 30px 40px;
                 }
+                @media screen and (max-width: 500px){
+                    padding: 30px 20px 40px 20px;
+                }
                 h4, p {
                     color: #232120;
                     width: 80%;
@@ -83,6 +89,19 @@
                         margin-top: 13px
                      }
                 }
+                .banner-block__wrap-btn{
+                    @media screen and (max-width: 400px){
+                        justify-content: space-between;
+                        padding: 0;
+                        width: 100%;
+                    } 
+                    button{
+                        @media screen and (max-width: 400px){
+                            margin: 0 0 20px 0;
+                        } 
+                    }
+                }
+                  
             }
         }
         .video-blocked{
@@ -157,7 +176,9 @@
         color: $body-font-color;
         font-size: 12px;
         @include fontz (14px, 500, normal);
-
+        @media screen and (max-width: 1300px){
+            display: none;
+        }
     }
    
     

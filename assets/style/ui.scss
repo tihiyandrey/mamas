@@ -191,7 +191,7 @@ button{
     width: 255px;
     box-sizing: border-box;
     flex-direction: column; 
-    margin-right: 20px;  
+    margin-right: 11px;  
     &__size{
         font-size: 14px;
         text-transform: capitalize;
@@ -219,6 +219,7 @@ button{
         color: #A49E9B;
         background: #FBF9F8;
         border: 1.5px solid #F2EEEC;
+        pointer-events: none;
         &:before{
             position: absolute;
             content: url('../img/btn-link-disabled.svg');
@@ -300,7 +301,6 @@ hr{
         @include fontz (20px, normal, normal);
         font-size: 13px;
         color: $Brown-subheader-color;
-        text-transform: uppercase;
         margin-bottom: 6px;
         @media screen and (max-width: 1000px){
             margin-top: 6px;
