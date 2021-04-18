@@ -1,0 +1,165 @@
+.all-courses{
+    background: $light-brown;
+    padding-top: 40px;
+    .banner-block{
+        position: relative;
+        padding: 40px 0 120px;
+        .pos-element__pos-left{
+            top: 0;
+        }
+        &__second-banner {
+            margin-top: 30px;
+        }
+        &__first-banner {
+            margin: 40px auto 30px;
+        }
+        &__bg{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: #FFFFFF;
+            border-radius: 4px;
+            @media screen and (max-width: 1000px){
+                flex-direction: column;
+            }
+            .banner-block__img{
+                width: 51%;
+                position: relative;
+                height: 420px;
+                @media screen and (max-width: 1300px){
+                   height: 313px;
+                }
+                @media screen and (max-width: 1000px){
+                    width: 100%;
+                    height: auto;
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @media screen and (max-width: 1000px){
+                        position: static;
+                    }
+                }
+            }
+            .banner-block__content{
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                position: static;
+                text-align: left;
+                padding: 80px 70px 0px 85px;
+                width: 49%;
+                box-sizing: border-box;
+                transform:translate(0,0);
+                -webkit-transform:translate(0,0);
+                -moz-transform:translate(0,0);
+                -ms-transform:translate(0,0);
+                -o-transform:translate(0,0);
+                @media screen and (max-width: 1300px){
+                    padding: 25px 40px 0px 40px;
+                }
+                 @media screen and (max-width: 1000px){
+                    width: 100%;
+                    padding: 30px 40px 30px 40px;
+                }
+                h4, p {
+                    color: #232120;
+                    width: 80%;
+                    text-align: left;
+                    @media screen and (max-width: 1300px){
+                        width: 100%;
+                    }
+                }
+                p{
+                    margin: 7px 0 34px;
+                    @media screen and (max-width: 1300px){
+                        margin: 7px 0 20px;
+                    }
+                }
+                h4{
+                    margin-top: 24px;
+                    @media screen and (max-width: 1300px){
+                        margin-top: 13px
+                     }
+                }
+            }
+        }
+        .video-blocked{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 44px;
+            height: 44px;
+            z-index: 4;
+            display: block;
+            @media screen and (max-width: 1000px){
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+             }
+        }
+        &__img-purchased{
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 5;
+        }
+        &_purchased{
+            .video-blocked{
+                display: none;
+            }
+            .banner-block__img-purchased{
+                display: block;
+            }
+            .banner-block__wrap-btn{
+                display: none;
+            }
+            .progress-block{
+                display: flex;
+            }
+        }
+    }
+    &__title{
+        text-align: center;
+        h3{
+            text-transform: uppercase;
+        }
+        p{
+            @include fontz (150%, normal, normal);
+            font-size: 13px;
+            color: $body-font-color;
+            margin-top: 18px;
+        }
+    }
+    
+    .coming-soon, .specialists{
+        background: #fff;
+    }
+    .advantages{
+        .all-courses__title-p{
+            text-align: left;
+        }
+    }
+    .specialists.section{
+            padding-top: 51px;
+        
+        .all-courses__title-p{
+            margin-bottom: 18px;
+        }
+    }
+    .advantages__first-item{
+        padding-top: 18px;
+    }
+    &__title-p{
+        text-transform: uppercase;
+        color: $body-font-color;
+        font-size: 12px;
+        @include fontz (14px, 500, normal);
+
+    }
+   
+    
+
+}

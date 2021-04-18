@@ -56,7 +56,7 @@ body{
 h1{
     @include adaptive-fonts(60, 35);
     font-family: 'FontsFree', sans-serif;
-    @include fontz (68px, 400, normal);
+    @include fontz (60px, 400, normal);
     text-align: center;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -78,7 +78,7 @@ h2{
 h3{
     font-family: 'FontsFree', sans-serif;
     @include adaptive-fonts(38, 24);
-    line-height: 50px;
+    line-height: 42px;
     text-align: center;
     @media screen and (max-width: 767px){
         line-height: 38px;
@@ -100,10 +100,9 @@ h5{
     @include adaptive-fonts(24, 16);
     @include fontz (32px, normal, normal);
     font-family: 'FontsFree', sans-serif;
-
 }
 h6{
-    @include adaptive-fonts(32, 26);
+    @include adaptive-fonts(20, 26);
     text-align: center;
 
 }
@@ -111,10 +110,13 @@ h6{
     max-width: 1200px;
     margin: auto;
     @media screen and (max-width: 1300px){
-       width: 90%;
+       width: 900px;
     }
+    @media screen and (max-width: 1000px){
+        width: 90%;
+     }
 }
-section{
+.section{
     padding: 110px 0;
     @media screen and (max-width: 1300px){
         padding: 60px 0;

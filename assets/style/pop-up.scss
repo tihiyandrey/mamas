@@ -11,11 +11,13 @@
     }
 }
 .pop-up__close{
+    width: 20px;
+    height: 20px;
     background: none;
     border: none;
     position: absolute;
     top: -11px;
-    right: -15px;
+    right: -30px;
     cursor: pointer;
     &:after, &:before{
         width: 20px;
@@ -23,6 +25,8 @@
         background: #fff;
         position: absolute;
         content: "";
+        top: 0;
+        left: 0;
     }
     &::after{
         transform: rotate(45deg);
@@ -60,10 +64,6 @@
             font-size: 16px;
             color: #6F6E6E;
         }
-    }
-    hr{
-        background: #DFD8D4;
-        margin: 20px 0 16px;
     }
     &__description{
         >:nth-child(1){

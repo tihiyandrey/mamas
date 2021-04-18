@@ -31,3 +31,19 @@ const specialistsPopUp = document.getElementsByClassName('specialists-pop-up'),
         })
       });
     
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        center: true,
+        items:1,
+        loop:false,
+        margin:10,
+        responsive:{
+            800:{
+                items:3
+            },
+            320:{
+              items:1
+          }
+        }
+      });
+    });
