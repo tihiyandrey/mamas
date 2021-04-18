@@ -2667,9 +2667,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 600px) {
   .plan__container {
-    width: 290px;
+    width: calc(100% - 30px);
   }
 }
 .plan__title {
@@ -2686,6 +2686,11 @@ header {
   display: block;
   margin: 40px auto 0;
 }
+@media all and (max-width: 375px) {
+  .plan__fields_submit {
+    width: 280px;
+  }
+}
 .plan__field {
   margin-bottom: 20px;
   position: relative;
@@ -2699,11 +2704,22 @@ header {
   box-sizing: border-box;
   padding: 40px 50px 40px 80px;
 }
+@media all and (max-width: 425px) {
+  .plan__field > label {
+    padding: 40px 50px 40px 50px;
+  }
+}
 .plan__field_info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
+}
+@media all and (max-width: 425px) {
+  .plan__field_info {
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 .plan__field_title {
   font-family: "FontsFree", sans-serif;
@@ -2727,6 +2743,13 @@ header {
   font-size: 12px;
   color: #686563;
 }
+@media all and (max-width: 375px) {
+  .plan__field_description {
+    position: relative;
+    left: -15%;
+    width: 130%;
+  }
+}
 .plan__field_check {
   width: 20px;
   height: 20px;
@@ -2737,8 +2760,20 @@ header {
   top: 50px;
   left: 30px;
 }
+@media all and (max-width: 425px) {
+  .plan__field_check {
+    left: 18px;
+  }
+}
 .plan .select {
   margin-bottom: 20px;
+}
+@media all and (max-width: 375px) {
+  .plan .select {
+    position: relative;
+    left: -15%;
+    width: 130%;
+  }
 }
 .plan .field__radio:checked + label {
   background: #FFFFFF;

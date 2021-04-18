@@ -8,8 +8,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media all and (max-width: 375px) {
-            width: 290px;
+        @media all and (max-width: 600px) {
+            width: calc(100% - 30px);
         }
     }
     &__title {
@@ -24,6 +24,9 @@
             width: 320px;
             display: block;
             margin: 40px auto 0;
+            @media all and (max-width: 375px) {
+                width: 280px;
+            }
         }
     }
     &__field {
@@ -37,12 +40,20 @@
             background: #FBF9F8;
             box-sizing: border-box;
             padding: 40px 50px 40px 80px;
+
+            @media all and (max-width: 425px) {
+                padding: 40px 50px 40px 50px;
+            }
         }
         &_info {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 12px;
+            @media all and (max-width: 425px) { 
+                flex-direction: column;
+                align-items: baseline;
+            }
         }
         &_title {
             font-family: "FontsFree", sans-serif;
@@ -65,6 +76,12 @@
             font-weight: normal;
             font-size: 12px;
             color: #686563;
+
+            @media all and (max-width: 375px) {
+                position: relative;
+                left: -15%;
+                width: 130%;
+            }
         }
         &_check {
             width: 20px;
@@ -75,10 +92,19 @@
             position: absolute;
             top: 50px;
             left: 30px;
+
+            @media all and (max-width: 425px) {
+                left: 18px;
+            }
         }
     }
     .select {
         margin-bottom: 20px;
+        @media all and (max-width: 375px) {
+            position: relative;
+            left: -15%;
+            width: 130%;
+        }
     }
     .field__radio:checked {
         & + label  {
