@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Reset Password</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <div class="unauthorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+                <button class="unauthorized__get-started red-btn">Commencer</button>
+            </div>
+            <div class="authorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+            </div>
+        </div>
+    </header>
+    <main class="reset">
+        <div class="container">
+            <div class="reset__container">
+                <h4 class="reset__title">Reset password</h4>
+                <form class="reset__fields">
+                    <div class="reset__field">
+                        <input class="reset__fields_email field__input" type="email" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="reset__fields_submit main-btn red-btn form-submit">SEND EMAIL</button>
+                </form>
+                <div class="reset__succsess">
+                    If you are an existing user, we will send you an email with a link to reset your password
+                </div>
+                <div class="reset__signin field__link">
+                    Remember your password? <a href="login.html">Log in</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

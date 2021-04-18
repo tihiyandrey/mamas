@@ -25,7 +25,7 @@
             text-transform: uppercase;
             @include fontz (38px, normal, normal);
             text-align: center;
-            margin-bottom: 26px;
+            margin-bottom: 55px;
         }
     }
 }
@@ -44,7 +44,7 @@
     }
     @media screen and (max-width: 767px){
         margin-bottom: 20px;
-        width: 80%;
+        width: 100%;
         height: 360px;
         padding: 16px 20px 10px 20px;
     }
@@ -78,7 +78,36 @@
 
     }
 }
-.owl-carousel .owl-stage{
-    padding-left: 10px!important;
-    padding-right: 10px!important;
+.owl-carousel {
+    .owl-stage{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+    .owl-dots {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        max-width: 320px;
+        
+        .owl-dot {
+            width: 30px;
+            height: 2px;
+            left: 53px;
+            top: 3801px;
+            background: #C4C4C4;
+
+            &.active {
+                background: #686563;
+            }
+        }
+    }
+    &.advantages__wrap {
+        .owl-dots {
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            top: -30px;
+        }
+    }
 }

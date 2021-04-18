@@ -327,3 +327,61 @@ hr{
         height: 5px;
     }
 }
+
+.field {
+    &__input {
+        background: #FFFFFF;
+        border: 1px solid #DCD9D7;
+        box-sizing: border-box;
+        border-radius: 2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: $body-font-color;
+        width: 318px;
+        height: 44px;
+        padding-left: 16px;
+        @media all and (max-width: 375px) {
+            width: 100%;
+        }
+    }
+    &__checkbox {
+        width: 14px;
+        height: 14px;
+        background: #FBF9F8;
+        border: 1px solid #DCD9D7;
+        box-sizing: border-box;
+        border-radius: 2px;
+        vertical-align: middle;
+    }
+    &__label {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: $body-font-color;
+        margin-left: 10px;
+        @media all and (max-width: 425px)  {
+            margin-left: 3px;
+        }
+    }
+    &__link {
+        text-align: center;
+    }
+}
+.form-submit {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.linkto {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #686563;
+}

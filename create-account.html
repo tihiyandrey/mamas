@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Create account</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <div class="unauthorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+                <button class="unauthorized__get-started red-btn">Commencer</button>
+            </div>
+            <div class="authorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+            </div>
+        </div>
+    </header>
+    <main class="login">
+        <div class="container">
+            <div class="login__container">
+                <h4 class="login__title">Create account</h4>
+                <div class="login__social">
+                    <div class="login__social__block login-social__block_google">
+                        <img src="assets/img/logo-google.svg" alt="">
+                        <span>Sign up with Google</span>
+                    </div>
+                    <div class="login__social__block login-social__block_facebook">
+                        <img src="assets/img/logo-facebook.svg" alt="">
+                        <span>Sign up WITH FACEBOOK</span>
+                    </div>
+                </div>
+                <div class="login__separator signup__separator">or create an account</div>
+                <form class="login__fields">
+                    <div class="login__field">
+                        <input class="login__fields_email field__input" type="email" placeholder="Email Address">
+                    </div>
+                    <div class="login__field">
+                        <input class="login__fields_password field__input" type="password" placeholder="Password">
+                    </div>
+                    <div class="login__field">
+                        <input class="login__fields_agree field__checkbox" type="checkbox" id="agree">
+                        <label class="login__fields_agree-label field__label" for="agree">I agree to the Terms of Use and Privacy Policy</label>
+                    </div>
+                    <button type="submit" class="login__fields_submit main-btn red-btn form-submit">Create account</button>
+                </form>
+                <div class="login__signin field__link">
+                    Already have an account? <a href="login.html">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
