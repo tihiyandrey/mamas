@@ -367,6 +367,9 @@ hr{
     &__link {
         text-align: center;
     }
+    &__radio {
+        display: none;
+    }
 }
 .form-submit {
     width: 100%;

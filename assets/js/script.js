@@ -67,3 +67,49 @@ $(document).ready(function(e) {
 $(window).resize(function() {
     owlInitialize();
 });
+
+
+// select style 
+
+let selectSingle = document.querySelectorAll('.select');
+
+selectSingle.forEach((el, index) => {
+
+    let selectSingle_title = el.querySelector('.select__title');
+    let selectSingle_labels = el.querySelectorAll('.select__label');
+
+    // Toggle menu 
+    selectSingle_title.addEventListener('click', () => {
+        selectSingle.forEach((element, i) => {
+            if(index !== i) {
+                element.setAttribute('data-state', '');
+            }
+        });
+        
+        if (el.getAttribute('data-state') === 'active') {
+            el.setAttribute('data-state', '');
+        } else {
+            el.setAttribute('data-state', 'active');
+        }
+    });
+
+    // Close when click to option 
+    for (let i = 0; i < selectSingle_labels.length; i++) {
+        selectSingle_labels[i].addEventListener('click', (evt) => {
+            selectSingle_title.textContent = evt.target.textContent;
+            el.setAttribute('data-state', '');
+        });
+    }
+    document.body.onclick = function(e) {
+        e = e || event;
+        target = e.target || e.srcElement;
+        console.log(target.className)
+        
+        if (target.className !== "select__title") {
+            if (target.className !== 'field__radio') {
+                el.setAttribute('data-state', '');
+            } 
+        }
+        
+    }
+});
