@@ -185,12 +185,13 @@ openViewCourse.forEach(el => {
 
 const openThankYou = document.querySelector('.open-thank-you');
 const popupThankYou = document.querySelector('.pop-up-thank-you');
-
-openThankYou.addEventListener('click', () => {
-    popUpRemind[0].classList.remove('pop-up_active');
-    popupThankYou.classList.add('pop-up_active');
-    blackout.classList.add('blackout_active');
-});
+if(openThankYou) {
+    openThankYou.addEventListener('click', () => {
+        popUpRemind[0].classList.remove('pop-up_active');
+        popupThankYou.classList.add('pop-up_active');
+        blackout.classList.add('blackout_active');
+    });
+}
 
 
 $(window).scroll(function() {

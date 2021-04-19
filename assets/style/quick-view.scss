@@ -188,28 +188,26 @@
     }
     .accordion_default{
         margin: 0 0 13px 0;
-        height: 74px;
        & .accordion{
-        &__item-main{
-            >:nth-child(1){
-                width: 11%;
+            &__item-main{
+                >:nth-child(1){
+                    width: 11%;
+                }
             }
-        }
-           &__item-main-description {
-            padding: 16px 20px 18px 19px;
-            width: 89%;
-            h5{
-                font-size: 16px;
-                line-height: 24px;
+            &__item-main-description {
+                padding: 16px 20px 18px 19px;
+                width: 89%;
+                h5{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                p{
+                    font-size: 11px;
+                    line-height: 14px;
+                }
             }
-            p{
-                font-size: 11px;
-                line-height: 14px;
-            }
-           }
-        &__item-second{
-            display: block;
-            padding: 20px 13px 35px 20px;
+            &__item-second{
+                padding: 20px 13px 35px 20px;
             }
         }
     }
@@ -218,7 +216,6 @@
     }
     .questions{
         .accordion_default{
-            height: 48px;
             & .accordion{
                 &__item-main-description{
                     padding: 13px 20px;

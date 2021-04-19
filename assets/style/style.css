@@ -681,6 +681,11 @@ header {
   width: 110px;
   margin-left: 30px;
 }
+@media all and (max-width: 767px) {
+  .unauthorized__get-started {
+    margin-left: 0;
+  }
+}
 .unauthorized_disabled {
   display: none;
 }
@@ -1421,7 +1426,6 @@ header {
   .specialists .accordion_desktop .accordion__item-main {
     background: #F7F2EF;
     width: 100%;
-    height: 84px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2413,7 +2417,6 @@ header {
 }
 .quick-view .accordion_default {
   margin: 0 0 13px 0;
-  height: 74px;
 }
 .quick-view .accordion_default .accordion__item-main > :nth-child(1) {
   width: 11%;
@@ -2431,14 +2434,10 @@ header {
   line-height: 14px;
 }
 .quick-view .accordion_default .accordion__item-second {
-  display: block;
   padding: 20px 13px 35px 20px;
 }
 .quick-view hr {
   margin: 30px 0 20px;
-}
-.quick-view .questions .accordion_default {
-  height: 48px;
 }
 .quick-view .questions .accordion_default .accordion__item-main-description {
   padding: 13px 20px;
