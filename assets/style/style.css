@@ -2069,22 +2069,6 @@ header {
     margin: 0 0 20px 0;
   }
 }
-.all-courses .banner-block .video-blocked {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 44px;
-  height: 44px;
-  z-index: 4;
-  display: block;
-}
-@media screen and (max-width: 1000px) {
-  .all-courses .banner-block .video-blocked {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
 .all-courses .banner-block__img-purchased {
   display: none;
   position: absolute;
@@ -2144,6 +2128,23 @@ header {
 @media screen and (max-width: 1300px) {
   .all-courses__title-p {
     display: none;
+  }
+}
+
+.video-blocked {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 44px;
+  height: 44px;
+  z-index: 4;
+  display: block;
+}
+@media screen and (max-width: 1000px) {
+  .video-blocked {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -2231,9 +2232,23 @@ header {
 }
 .quick-view .course .course-item > :nth-child(1) {
   width: 26%;
+  position: relative;
 }
 .quick-view .course .course-item > :nth-child(1) img {
   width: 100%;
+}
+.quick-view .course .course-item .video-blocked {
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.quick-view .course .course-item .video-blockeddisabled {
+  display: none;
 }
 .quick-view .course .course-item__title-wrap {
   display: flex;
