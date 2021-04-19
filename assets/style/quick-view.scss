@@ -188,7 +188,6 @@
     }
     .accordion_default{
         margin: 0 0 13px 0;
-        height: 74px;
        & .accordion{
         &__item-main{
             >:nth-child(1){
@@ -208,7 +207,6 @@
             }
            }
         &__item-second{
-            display: block;
             padding: 20px 13px 35px 20px;
             }
         }
@@ -218,7 +216,6 @@
     }
     .questions{
         .accordion_default{
-            height: 48px;
             & .accordion{
                 &__item-main-description{
                     padding: 13px 20px;
