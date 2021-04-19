@@ -32,8 +32,6 @@ function openAccordion(element, i) {
     accordionItemSecond[i].classList.toggle('accordion__item-second_open');
     accordionOPenBtn[i].classList.toggle('accordion__open-btn_active');
     element.classList.toggle('accordion_open');
-    console.log(accordionItemSecond[i]);
-
 }
 function accordionOpenPopUP() {
     specialistsPopUp[0].classList.add('pop-up_active');
@@ -128,7 +126,6 @@ selectSingle.forEach((el, index) => {
     document.body.onclick = function(e) {
         e = e || event;
         target = e.target || e.srcElement;
-        console.log(target.className)
         
         if (target.className !== "select__title") {
             if (target.className !== 'field__radio') {
@@ -137,4 +134,32 @@ selectSingle.forEach((el, index) => {
         }
         
     }
+});
+
+const pregnantCheck = document.querySelectorAll('input[name="pregnant"]');
+const pregnantShow = document.querySelector('.pregnant-show');
+const childrenCheck = document.querySelectorAll('input[name="children"]');
+const childrenShow = document.querySelector('.children-show');
+const quizField = document.querySelectorAll('.quiz__field');
+const quizSubmit = document.querySelector('.quiz__fields_submit');
+
+pregnantCheck.forEach(el => {
+    el.addEventListener('change', () => {
+        quizField[1].classList.remove('holded');
+        if(el.value === 'yes') {
+            pregnantShow.classList.add('active');
+        } else {
+            pregnantShow.classList.remove('active');
+        }
+    })
+});
+childrenCheck.forEach(el => {
+    el.addEventListener('change', () => {
+        quizSubmit.classList.remove('holded');
+        if(el.value === 'yes') {
+            childrenShow.classList.add('active');
+        } else {
+            childrenShow.classList.remove('active');
+        }
+    })
 });

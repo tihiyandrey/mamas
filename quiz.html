@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Quiz</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <div class="unauthorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+                <button class="unauthorized__get-started red-btn">Commencer</button>
+            </div>
+            <div class="authorized">
+                <a href="#" class="header__link">Tous les cours</a>
+                <button class="header__link">Connexion</button>
+            </div>
+        </div>
+    </header>
+    <main class="quiz">
+        <div class="container">
+            <div class="quiz__container">
+                <h4 class="quiz__title">Answer a few questions to help us personalize you</h4>
+                <div class="quiz__fields">
+                    <div class="quiz__field">
+                        <div class="quiz__field_title">Are you pregnant now?</div>
+                        <div class="quiz__field_choose">
+                            <div class="quiz__field_radio">
+                                <input class="field__radio" name="pregnant" type="radio" id="pregnant-yes" value="yes">
+                                <label for="pregnant-yes">yes</label>
+                            </div>
+                            <div class="quiz__field_radio">
+                                <input class="field__radio" name="pregnant" type="radio" id="pregnant-no" value="no">
+                                <label for="pregnant-no">no</label>
+                            </div>
+                        </div>
+                        <div class="quiz__field_show pregnant-show">
+                            <div class="quiz__field_title">What month of pregnancy?</div>
+                            <div class="select" data-state="" id="course_one">
+                                <div class="select__title" data-default=" ">1 week</div>
+                                <div class="select__content">
+                                    <input id="c1" class="select__input" type="radio" name="chose-course" />
+                                    <label for="c1" class="select__label">1 week</label>
+                                    <input id="c2" class="select__input" type="radio" name="chose-course" />
+                                    <label for="c2" class="select__label">2 week</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__separator"></div>
+                    <div class="quiz__field holded">
+                        <div class="quiz__field_title">Do you have children?</div>
+                        <div class="quiz__field_choose">
+                            <div class="quiz__field_radio">
+                                <input class="field__radio" name="children" type="radio" id="children-yes" value="yes">
+                                <label for="children-yes">yes</label>
+                            </div>
+                            <div class="quiz__field_radio">
+                                <input class="field__radio" name="children" type="radio" id="children-no" value="no">
+                                <label for="children-no">no</label>
+                            </div>
+                        </div>
+                        <div class="quiz__field_show children-show">
+                            <div class="quiz__field_title">How many children do you have?</div>
+                            <div class="select" data-state="" id="course_one">
+                                <div class="select__title" data-default=" ">1 children</div>
+                                <div class="select__content">
+                                    <input id="ch1" class="select__input" type="radio" name="chose-children" />
+                                    <label for="ch1" class="select__label">1 child</label>
+                                    <input id="ch2" class="select__input" type="radio" name="chose-children" />
+                                    <label for="ch2" class="select__label">2 childs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="quiz__fields_submit main-btn red-btn form-submit holded">submit</a>
+                    <div class="skip">SKIP</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
