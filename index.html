@@ -20,7 +20,9 @@
             <div class="unauthorized">
                 <a href="#" class="header__link">Tous les cours</a>
                 <button class="header__link">Connexion</button>
-                <button class="unauthorized__get-started red-btn">Commencer</button>
+                <div class="stiky-btn">
+                    <button class="unauthorized__get-started red-btn">Commencer</button>
+                </div>
             </div>
             <div class="authorized">
                 <a href="#" class="header__link">Tous les cours</a>
@@ -61,7 +63,7 @@
                     <h2>La naissance en conscience</h2>
                     <p>Chaque femme est unique, et chaque accouchement l’est également. Si une sage-femme ou un obstétricien peuvent aider une femme à mettre son bébé au monde</p>
                     <div class="banner-block__wrap-btn">
-                        <button class="double-btn double-btn_white">Voir le cours</button>   
+                        <button class="double-btn double-btn_white open-view-course">Voir le cours</button>   
                         <button class="double-btn double-btn_red">suivre ce cours</button>    
                     </div>
                     <a href="#" class="underline-btn underline-btn_white">QUICK VIEW</a>
@@ -78,7 +80,7 @@
                     <h2>MODULE  POSTNATAL</h2>
                     <p>Chaque femme est unique, et chaque accouchement l’est également. Si une sage-femme ou un obstétricien peuvent aider une femme à mettre son bébé au monde</p>
                     <div class="banner-block__wrap-btn">
-                        <button class="double-btn double-btn_white">View course</button>   
+                        <button class="double-btn double-btn_white open-view-course">View course</button>   
                         <button class="double-btn double-btn_red">get this course</button>    
                     </div>
                     <a href="#" class="underline-btn underline-btn_white">QUICK VIEW</a>
@@ -410,7 +412,7 @@
         <p>We will send you an email when the course is opened</p>
         <form action="#">
             <input type="mail" placeholder="Enter Email Address">
-            <button class="double-btn double-btn_red">remind me</button>
+            <button class="double-btn double-btn_red open-thank-you">remind me</button>
         </form>
     </section>
     <section class="pop-up pop-up-remind pop-up-thank-you">
@@ -418,6 +420,220 @@
         <p>Thank you</p>
         <span>While you are waiting - check our opened cources. We sure you may find something interesting there too.</span>
         <a href="all-courses.html" class="double-btn double-btn_red">VIEW OTHER COURSES</a>
+    </section>
+    <section class="pop-up quick-view quick-view_authorized">
+        <button class="pop-up__close"></button>
+        <div class="video-wrap">
+            <div class="video-wrap__play"><img src="assets/img/play.svg" alt=""></div>
+        </div>
+        <div class="quick-view__container">
+            <div class="quick-view__title-wrap">
+                <h4>La naissance en conscience</h4>
+                <button class="double-btn double-btn_red">obtenir ce cours</button>    
+            </div>
+            <hr>
+            <div class="quick-view__date-container">
+                <div class="quick-view__date-wrap">
+                    <div class="banner-block__img-purchased">purchased</div>
+                    <div class="quick-view__date"><span>FOR</span> 27 december 2021</div>
+                </div>
+                <hr>
+            </div>
+            <div class="quick-view__description">
+                <p class="quick-view__title-p">Class Info</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut consectetur adipiscing elit</p>
+                <div class="video-time">
+                    <span><span>19</span>video </span>
+                    <img src="assets/img/clock-svg.svg" alt="">
+                    <span><span>4h 14</span>total</span>
+                </div>
+                <hr>
+            </div>
+            <div class="quick-view__resources-wrap btn-link-block">
+                <p class="btn-link-block__title">Resources <span>(3)</span> </p>
+                <div class="btn-link-block__wrap">
+                    <a href="#" class="btn-link btn-link_bg">
+                        <div class="btn-link__title">Document_for_1_course.pdf</div>
+                        <div class="btn-link__size">337 KB</div>
+                    </a>
+                    <a href="#" class="btn-link btn-link_bg btn-link_disabled">
+                        <div class="btn-link__title">Document_for_1_course.pdf</div>
+                        <div class="btn-link__size">337 KB</div>
+                    </a>
+                </div>
+                <hr>
+            </div>
+            <div class="course">
+                <p class="quick-view__title-p">Course programm</p>
+                <div class="course__wrap">
+                    <div class="course-item">
+                        <div class=""><img src="assets/img/course1.png" alt=""></div>
+                        <div class="course-item__content">
+                            <div class="course-item__title-wrap">
+                                <p class="course-item__title"><span>1.</span> Meet Your Instructor</p>
+                                <div class="video-time">
+                                    <div class="video-blocked"><img src="assets/img/blocked.svg" alt=""></div>
+                                    <img src="assets/img/clock-svg.svg" alt="">
+                                    <span><span>08:12</span>
+                                </div>
+                            </div>
+                            <p class="course-item__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsect incidionsectincidionsect</p>
+                            <div class="progress-block">
+                                <div class="progress-block__result-title progress-block__result-title_green"><span>33%</span>completed</div>
+                                <div class="progress-block__progress">
+                                    <span class="progress-block__progress-result"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <div class=""><img src="assets/img/course2.png" alt=""></div>
+                        <div class="course-item__content">
+                            <div class="course-item__title-wrap">
+                                <p class="course-item__title"><span>2.</span>Consuming and criticizing culture</p>
+                                <div class="video-time">
+                                    <img src="assets/img/clock-svg.svg" alt="">
+                                    <span><span>08:12</span>
+                                </div>
+                            </div>
+                            <p class="course-item__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsect incidionsectincidionsect</p>
+                            <div class="progress-block">
+                                <div class="progress-block__result-title"><span>0%</span>completed</div>
+                                <div class="progress-block__progress">
+                                    <span class="progress-block__progress-result progress-block__progress-result_start"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-item">
+                        <div class=""><img src="assets/img/course3.png" alt=""></div>
+                        <div class="course-item__content">
+                            <div class="course-item__title-wrap">
+                                <p class="course-item__title"><span>3.</span>Consuming and criticizing culture</p>
+                                <div class="video-time">
+                                    <img src="assets/img/clock-svg.svg" alt="">
+                                    <span><span>08:12</span>
+                                </div>
+                            </div>
+                            <p class="course-item__description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsect incidionsectincidionsect</p>
+                            <div class="progress-block">
+                                <div class="progress-block__result-title"><span>0%</span>completed</div>
+                                <div class="progress-block__progress">
+                                    <span class="progress-block__progress-result progress-block__progress-result_start"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="underline-btn">View all VIDEO</a>
+                <hr>
+            </div>
+            <section class="specialists">
+                <div class="container specialists__wrap">
+                    <p class="quick-view__title-p">Related instructors</p>
+                    <div class="specialists__wrap-content">
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                <div class="accordion__item-main-description">
+                                    <h5>Docteur Charles Michel Dray</h5>
+                                    <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>About specialist</p>
+                                <p>Jasmine Katatikarn is a fertility warrior who struggled to have a child for six years. After multiple IUIs and her 2nd IVF, she was told that she had a less than 1% chance of having a baby and to stop trying. However, Jasmine didn’t give up. Using her background as an artist, she applied a strategy through her FREEdom method to overcome her roadblocks and design a life that gave control of her fertility journey and life moving forward. </p>
+                            </div>
+                        </div>
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                <div class="accordion__item-main-description">
+                                    <h5>Docteur Charles Michel Dray</h5>
+                                    <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>About specialist</p>
+                                <p>Jasmine Katatikarn is a fertility warrior who struggled to have a child for six years. After multiple IUIs and her 2nd IVF, she was told that she had a less than 1% chance of having a baby and to stop trying. However, Jasmine didn’t give up. Using her background as an artist, she applied a strategy through her FREEdom method to overcome her roadblocks and design a life that gave control of her fertility journey and life moving forward. </p>
+                            </div>
+                        </div>
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                <div class="accordion__item-main-description">
+                                    <h5>Docteur Charles Michel Dray</h5>
+                                    <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>About specialist</p>
+                                <p>Jasmine Katatikarn is a fertility warrior who struggled to have a child for six years. After multiple IUIs and her 2nd IVF, she was told that she had a less than 1% chance of having a baby and to stop trying. However, Jasmine didn’t give up. Using her background as an artist, she applied a strategy through her FREEdom method to overcome her roadblocks and design a life that gave control of her fertility journey and life moving forward. </p>
+                            </div>
+                        </div>
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                <div class="accordion__item-main-description">
+                                    <h5>Docteur Charles Michel Dray</h5>
+                                    <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>About specialist</p>
+                                <p>Jasmine Katatikarn is a fertility warrior who struggled to have a child for six years. After multiple IUIs and her 2nd IVF, she was told that she had a less than 1% chance of having a baby and to stop trying. However, Jasmine didn’t give up. Using her background as an artist, she applied a strategy through her FREEdom method to overcome her roadblocks and design a life that gave control of her fertility journey and life moving forward. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="questions">
+                <div class="container specialists__wrap">
+                    <p class="quick-view__title-p">Frequently asked questions</p>
+                    <div class="specialists__wrap-content">
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div class="accordion__item-main-description">
+                                    <h5><span>1.</span>Meet Your Instructor</h5>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                            </div>
+                        </div>
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div class="accordion__item-main-description">
+                                    <h5><span>2.</span>Challenging ideas and changing minds</h5>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                            </div>
+                        </div>
+                        <div class="accordion accordion_default">
+                            <div class="accordion__item-main">
+                                <div class="accordion__item-main-description">
+                                    <h5><span>3.</span>Consuming and criticizing culture</h5>
+                                </div>
+                                <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                            </div>
+                            <div class="accordion__item-second">
+                                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
     </section>
     <div class="blackout"></div>
     <script src="assets/js/script.js"></script>

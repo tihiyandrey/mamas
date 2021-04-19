@@ -25,14 +25,19 @@
     position: relative;
     width: 49%;
     margin-bottom: 50px;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1299px){
         width: 100%;
+        margin-bottom: 0;
         overflow: hidden;
+    }
+    @media all and (max-width: 560px){
+        height: 400px;
     }
     img{
         width: 100%;
         @media screen and (max-width: 768px){
-            width: auto;
+            width: auto !important;
+            height: 100%;
         }
     }
     &__content{
@@ -44,6 +49,19 @@
         text-align: center;
         color: #FFFFFF;
         width: 69%;
+        @media all and (max-width: 560px) {
+            width: 100%;
+        }
+        h4 {
+            @media all and (max-width: 560px) {
+                font-size: 18px;
+            }
+        }
+        button {
+            @media all and (max-width: 560px) {
+                padding: 10px 0 9px;
+            }
+        }
     }
     p{
         width: 84%;
@@ -57,5 +75,14 @@
             width: 71%;
             // color: $Brown-subheader-color;
         }
+        @media all and (max-width: 560px) {
+            width: 90%;
+        }
+    }
+}
+.owl-carousel-2 {
+    margin-bottom: 30px;
+    .owl-dots {
+        margin-top: 20px;
     }
 }

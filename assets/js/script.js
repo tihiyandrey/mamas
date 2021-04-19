@@ -55,9 +55,9 @@ const titleName = $('.advantages__first-item').html();
 function owlInitialize() {
     if ($(window).width() < 1300) {
         $('.advantages__first-item').remove();
-        $('.advantages__wrap').addClass("owl-carousel");
-        $('.coming-soon__wrap').addClass("owl-carousel");
-        $('.owl-carousel').owlCarousel({
+        $('.advantages__wrap').addClass("owl-carousel owl-carousel-1");
+        $('.coming-soon__wrap').addClass("owl-carousel owl-carousel-2");
+        $('.owl-carousel-1').owlCarousel({
             center: true,
             loop:true,
             margin:10,
@@ -74,6 +74,14 @@ function owlInitialize() {
                     items:1
                 }
             }
+        });
+        $('.owl-carousel-2').owlCarousel({
+            center: true,
+            loop:true,
+            margin:10,
+            stagePadding: 40,
+            dots: true,
+            items: 1,
         });
     }else{
         $('.owl-carousel').owlCarousel('destroy');
@@ -162,4 +170,34 @@ childrenCheck.forEach(el => {
             childrenShow.classList.remove('active');
         }
     })
+});
+
+const openViewCourse = document.querySelectorAll('.open-view-course');
+const quickView = document.querySelector('.quick-view');
+console.log('openViewCourse', openViewCourse)
+
+openViewCourse.forEach(el => {
+    el.addEventListener('click', () => {
+        quickView.classList.add('quick-view_open');
+        blackout.classList.add('blackout_active');
+    })
+});
+
+const openThankYou = document.querySelector('.open-thank-you');
+const popupThankYou = document.querySelector('.pop-up-thank-you');
+
+openThankYou.addEventListener('click', () => {
+    popUpRemind[0].classList.remove('pop-up_active');
+    popupThankYou.classList.add('pop-up_active');
+    blackout.classList.add('blackout_active');
+});
+
+
+$(window).scroll(function() {
+     let height = $(window).scrollTop();
+    if(height > 100){
+        $('.stiky-btn').addClass('stiky-btn__show');
+    } else{
+        $('.stiky-btn').removeClass('stiky-btn__show');
+    }
 });

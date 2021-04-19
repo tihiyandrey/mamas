@@ -394,6 +394,7 @@ button {
 }
 .btn-link-block__wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn-link {
@@ -680,11 +681,6 @@ header {
   width: 110px;
   margin-left: 30px;
 }
-@media screen and (max-width: 767px) {
-  .unauthorized__get-started {
-    display: none;
-  }
-}
 .unauthorized_disabled {
   display: none;
 }
@@ -694,6 +690,31 @@ header {
 }
 .authorized_active {
   display: flex;
+}
+
+.stiky-btn {
+  display: inline-block;
+}
+@media all and (max-width: 767px) {
+  .stiky-btn {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: #fff;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: none;
+  }
+  .stiky-btn button {
+    width: 315px;
+  }
+}
+.stiky-btn__show {
+  display: block;
 }
 
 .main-banner {
@@ -1121,6 +1142,13 @@ header {
     margin-bottom: 40px;
   }
 }
+@media all and (max-width: 1200px) {
+  .advertising__second .advertising__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .advertising__second .pos-element__pos-right {
   top: 0;
 }
@@ -1152,6 +1180,11 @@ header {
 .advertising__second-content .advertising__tagline {
   margin-bottom: 20px;
 }
+@media all and (max-width: 1200px) {
+  .advertising__second-content {
+    width: 100%;
+  }
+}
 .advertising__second-img {
   position: relative;
 }
@@ -1159,7 +1192,7 @@ header {
   .advertising__second-img {
     order: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
   }
 }
@@ -1459,10 +1492,16 @@ header {
   width: 49%;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1299px) {
   .coming-soon-item {
     width: 100%;
+    margin-bottom: 0;
     overflow: hidden;
+  }
+}
+@media all and (max-width: 560px) {
+  .coming-soon-item {
+    height: 400px;
   }
 }
 .coming-soon-item img {
@@ -1470,7 +1509,8 @@ header {
 }
 @media screen and (max-width: 768px) {
   .coming-soon-item img {
-    width: auto;
+    width: auto !important;
+    height: 100%;
   }
 }
 .coming-soon-item__content {
@@ -1482,6 +1522,21 @@ header {
   text-align: center;
   color: #FFFFFF;
   width: 69%;
+}
+@media all and (max-width: 560px) {
+  .coming-soon-item__content {
+    width: 100%;
+  }
+}
+@media all and (max-width: 560px) {
+  .coming-soon-item__content h4 {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 560px) {
+  .coming-soon-item__content button {
+    padding: 10px 0 9px;
+  }
 }
 .coming-soon-item p {
   width: 84%;
@@ -1499,6 +1554,18 @@ header {
     width: 71%;
   }
 }
+@media all and (max-width: 560px) {
+  .coming-soon-item p {
+    width: 90%;
+  }
+}
+
+.owl-carousel-2 {
+  margin-bottom: 30px;
+}
+.owl-carousel-2 .owl-dots {
+  margin-top: 20px;
+}
 
 .pop-up {
   position: fixed;
@@ -1515,7 +1582,7 @@ header {
   }
 }
 .pop-up_active {
-  display: flex;
+  display: flex !important;
 }
 
 .pop-up__close {
@@ -2154,6 +2221,16 @@ header {
   z-index: 6;
   height: 90vh;
   overflow: auto;
+}
+.quick-view.all-courses {
+  display: block;
+  height: 100%;
+  overflow: visible;
+}
+@media screen and (max-width: 1100px) {
+  .quick-view.all-courses {
+    min-width: unset;
+  }
 }
 @media screen and (max-width: 1100px) {
   .quick-view {

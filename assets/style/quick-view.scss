@@ -4,6 +4,15 @@
     z-index: 6;
     height: 90vh;
     overflow: auto;
+
+    &.all-courses {
+        display: block;
+        height: 100%;
+        overflow: visible;
+        @media screen and (max-width: 1100px){
+            min-width: unset;
+        }
+    }
     @media screen and (max-width: 1100px){
         min-width: 620px;
     }

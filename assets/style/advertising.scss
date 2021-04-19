@@ -83,6 +83,11 @@
             @media screen and (max-width: 767px){
                 margin-bottom: 40px;
             }
+            @media all and (max-width: 1200px) {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
         .pos-element__pos-right{
             top: 0;
@@ -109,13 +114,16 @@
         .advertising__tagline{
             margin-bottom: 20px;
         }
+        @media all and (max-width: 1200px) {
+            width: 100%;
+        }
     }
     &__second-img{
         position: relative;
         @media screen and (max-width: 1200px){
             order: 1;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             width: 100%;
          }
         img{
