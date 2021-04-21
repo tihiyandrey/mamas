@@ -10,7 +10,7 @@
         top: 40%;
     }
     &_active{
-        display: flex;
+        display: flex !important;
     }
 }
 .pop-up__close{

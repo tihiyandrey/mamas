@@ -12,20 +12,20 @@ const specialistsPopUp = document.getElementsByClassName('specialists-pop-up'),
       accordionItemSecond = document.querySelectorAll('.accordion__item-second'),
       accordionOPenBtn = document.querySelectorAll('.accordion__open-btn');
 
-accordionDesktop.forEach((element, i) => {
-    element.addEventListener('click', () => {
-        if (window.screen.width >= 768){
-            accordionOpenPopUP();
-        } else{
+accordion.forEach((element, i) => {
+    if (element.classList[1] === 'accordion_desktop') {
+        element.addEventListener('click', () => {
+            if (window.screen.width >= 768){
+                accordionOpenPopUP();
+            } else{
+                openAccordion(element, i);
+            }
+        });
+    } else {
+        element.addEventListener('click', () =>{ 
             openAccordion(element, i);
-        }
-    });
-});
-
-accordionDefault.forEach((element, i) => {
-    element.addEventListener('click', () =>{ 
-    openAccordion(element, i);
-    })
+        })
+    }
 });
 
 function openAccordion(element, i) {
