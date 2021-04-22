@@ -645,6 +645,7 @@ header {
 }
 .header__logo img {
   width: 100%;
+  max-width: 50px;
 }
 .header__link {
   line-height: 15px;
