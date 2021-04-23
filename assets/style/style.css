@@ -655,7 +655,7 @@ header {
   line-height: 15px;
   text-transform: uppercase;
   position: relative;
-  margin-left: 80px;
+  margin-left: 30px;
 }
 .header__link:hover:after {
   position: absolute;
@@ -767,7 +767,7 @@ header {
 
 .main-banner-content {
   margin: auto;
-  width: 50%;
+  width: 57%;
 }
 @media screen and (max-width: 1300px) {
   .main-banner-content {
@@ -801,7 +801,7 @@ header {
   line-height: 21px;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: 17px;
 }
 @media screen and (max-width: 900px) {
   .main-banner-content p {
@@ -960,7 +960,7 @@ header {
   }
 }
 .banner-block__content p {
-  width: 35%;
+  width: 65%;
   font-size: 14px;
   text-align: center;
   color: #FBF9F8;
@@ -1052,22 +1052,12 @@ header {
   display: flex;
 }
 .advertising__tagline {
+  font-size: 16px;
   letter-spacing: 0.01em;
-  font-family: "MarckScript", sans-serif;
   line-height: 50px;
   font-weight: normal;
   font-style: normal;
   margin-bottom: 10px;
-}
-@media (max-width: 767px) {
-  .advertising__tagline {
-    font-size: calc(20px + 13.6 * ((110vw - 320px) / 1440));
-  }
-}
-@media (min-width: 767px) {
-  .advertising__tagline {
-    font-size: calc(20px + 8 * ((100vw) / 1440));
-  }
 }
 @media screen and (max-width: 374px) {
   .advertising__tagline {
@@ -1182,6 +1172,8 @@ header {
 }
 .advertising__second-content h3 {
   text-align: left;
+  margin-bottom: 20px;
+  font-size: 42px;
 }
 .advertising__second-content .advertising__tagline {
   margin-bottom: 20px;
@@ -1331,7 +1323,7 @@ header {
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 79px;
   transition: 0.1s all;
   font-family: "FontsFree", sans-serif;
   margin-top: 14px;

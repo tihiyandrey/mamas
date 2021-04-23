@@ -36,7 +36,7 @@
 }
 .main-banner-content{
     margin: auto;
-    width: 50%;
+    width: 57%;
     @media screen and (max-width: 1300px){
         width: 61%;
     }
@@ -57,7 +57,7 @@
     }
     p{
         @include fontz (21px, normal, normal);
-        font-size: 14px;
+        font-size: 17px;
         @media screen and (max-width: 900px){
             width: 90%;
             margin: auto;
@@ -182,7 +182,7 @@
             }
         }
         p{
-            width: 35%;
+            width: 65%;
             font-size: 14px;
             text-align: center;
             color: $light-brown;
