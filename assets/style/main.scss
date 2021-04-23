@@ -46,6 +46,10 @@ $body-font-color: #686563;
 $fonts-color: #232120;
 $cta-color: #CB5050;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     color: $fonts-color;
     font-size: 14px;

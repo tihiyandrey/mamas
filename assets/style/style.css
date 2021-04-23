@@ -22,6 +22,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #232120;
   font-size: 14px;
@@ -1488,6 +1492,7 @@ header {
   position: relative;
   width: 49%;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1299px) {
   .coming-soon-item {
@@ -1503,12 +1508,17 @@ header {
 }
 .coming-soon-item img {
   width: 100%;
+  transform: scale(1);
+  transition: all 1.3s;
 }
 @media screen and (max-width: 768px) {
   .coming-soon-item img {
     width: auto !important;
     height: 100%;
   }
+}
+.coming-soon-item img:hover {
+  transform: scale(1.3);
 }
 .coming-soon-item__content {
   position: absolute;
