@@ -48,6 +48,7 @@ header{
     &__get-started{
         width: 110px;
         margin-left: 30px;
+        display: inline-block;
 
         @media all and (max-width: 767px) {
             margin-left: 0;

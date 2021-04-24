@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Home Page</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
 </head>
 <body>
     <header>
         <div class="header container">
-            <a href="index.html" class="header__logo"><img src="assets/img/ logo.svg" width="50px" alt="logo"></a>
+            <a href="index.html" class="header__logo"><img src="assets/img/ logo.svg" alt="logo"></a>
             <div class="unauthorized">
-                <a href="#" class="header__link">Tous les cours</a>
-                <button class="header__link">Connexion</button>
+                <a href="all-courses.html" class="header__link">Tous les cours</a>
+                <a href="login.html" class="header__link">Connexion</a>
                 <div class="stiky-btn">
-                    <button class="unauthorized__get-started red-btn">Commencer</button>
+                    <a href="create-account.html" class="unauthorized__get-started red-btn">Commencer</a>
                 </div>
             </div>
             <div class="authorized">
@@ -31,18 +29,18 @@
         </div>
     </header>
     <main>
-        <section class="main-banner section">
+        <section class="main-banner section" data-aos="fade-up">
             <div class="container main-banner__wrap">
                 <div class="main-banner-content">
                     <h1>L'école des Futures Mamans</h1>
                     <p>Le premier espace de préparation à la maternité qui vous accompagne au cours de la grossesse, lors de la naissance, et tout au long de la première année de votre bébé.</p>
-                    <button class="main-btn red-btn"><a href="#main-courses">Voir tous les cours</a></button>
+                    <a class="main-btn red-btn" href="#main-courses">Voir tous les cours</a>
                 </div>
                 <div class="pos-element pos-element__pos-left"><img src="assets/img/main_banner_maman1.png" alt=""></div>
                 <div class="pos-element pos-element__pos-right"><img src="assets/img/main_banner_maman2.png" alt=""></div>
             </div>
         </section>
-        <section class="description section">
+        <section class="description section" data-aos="fade-up">
             <div class="container">
                 <div class="description__content">
                     <p class="description__title">Philosophie</p>
@@ -56,8 +54,8 @@
             <div class="pos-element pos-element__pos-right"><img src="assets/img/main-description-right.png" alt=""></div>
 
         </section>
-        <section class="banner-block section" id="main-courses">
-            <div class="container banner-block__bg banner-block__first-banner">
+        <section class="banner-block section" id="main-courses" data-aos="fade-up">
+            <div class="container banner-block__bg banner-block__first-banner" data-aos="fade-up">
                 <div class="banner-block__img"><img src="assets/img/main-page-banner1.png" alt=""></div>
                 <div class="banner-block__content">
                     <h2>La naissance en conscience</h2>
@@ -66,15 +64,15 @@
                         <button class="double-btn double-btn_white open-view-course">DÈCOUVRIR</button>   
                         <button class="double-btn double-btn_red">suivre ce cours</button>    
                     </div>
-                    <a href="#" class="underline-btn underline-btn_white">APERÇU RAPIDE</a>
+                    <a href="#" class="underline-btn underline-btn_white open-view-course">APERÇU RAPIDE</a>
                 </div>
             </div>
-            <div class="advertising advertising__first">
+            <div class="advertising advertising__first" data-aos="fade-up">
                 <p class="advertising__tagline">It is new step for your pregnant</p>
                 <h3>The only childbirth class you need to take.</h3>
                 <button class="advertising__btn">GET 50% DISCOUNT FOR THIS COURSE</button>
             </div>
-            <div class="container banner-block__bg banner-block__second-banner">
+            <div class="container banner-block__bg banner-block__second-banner" data-aos="fade-up">
                 <div class="banner-block__img"><img src="assets/img/main-page-banner2.png" alt=""></div>
                 <div class="banner-block__content">
                     <h2>NOS PREMIÈRES SEMAINES</h2>
@@ -87,7 +85,7 @@
                 </div>
             </div>
             <a href="all-courses.html" class="underline-btn">DÈCOUVRIR</a>
-            <div class="advertising advertising__second">
+            <div class="advertising advertising__second" data-aos="fade-up">
                 <div class="container">
                     <div class="advertising__second-img">
                         <div class="bigger-photo"><img src="assets/img/advertising-bigger.png" alt=""></div>
@@ -103,7 +101,7 @@
 
             </div>
         </section>
-        <section class="advantages section">
+        <section class="advantages section" data-aos="fade-up">
             <p class="advantages__mobile-title">CETTE ÉCOLE EST FAITE POUR COUS SI…</p>
             <div class="container advantages__wrap">
                 <div class="advantages__first-item">CETTE ÉCOLE EST FAITE POUR COUS SI…</div>
@@ -145,14 +143,14 @@
             </div>
             <a href="all-courses.html" class="underline-btn">VOIR TOUS LES COURS</a>
         </section>
-        <section class="specialists section">
+        <section class="specialists section" data-aos="fade-up">
             <div class="pos-element pos-element__pos-right"><img src="assets/img/specialists-pos-item.png" alt=""></div>
             <div class="container specialists__wrap">
                 <h3>NOS EXPERTS</h3>
                 <div class="specialists__wrap-content">
                     <div class="accordion accordion_desktop">
                         <div class="accordion__item-main">
-                            <div><img src="assets/img/specialists-1.png" alt=""></div>
+                            <div class="specialists__wrap_photo"><img src="assets/img/specialists-1.png" alt=""></div>
                             <div class="accordion__item-main-description">
                                 <h5>Docteur Charles Michel Dray</h5>
                                 <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
@@ -166,10 +164,10 @@
                     </div>
                     <div class="accordion accordion_desktop">
                         <div class="accordion__item-main">
-                            <div><img src="assets/img/specialists-1.png" alt=""></div>
+                            <div class="specialists__wrap_photo"><img src="assets/img/specialists-2.png" alt=""></div>
                             <div class="accordion__item-main-description">
-                                <h5>Docteur Charles Michel Dray</h5>
-                                <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                <h5>Amelie Menuey Catrou</h5>
+                                <p>Sage-femme liberale, hypnothérapeute et sexologue</p>
                             </div>
                             <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                         </div>
@@ -180,10 +178,10 @@
                     </div>
                     <div class="accordion accordion_desktop">
                         <div class="accordion__item-main">
-                            <div><img src="assets/img/specialists-1.png" alt=""></div>
+                            <div class="specialists__wrap_photo"><img src="assets/img/specialists-3.png" alt=""></div>
                             <div class="accordion__item-main-description">
-                                <h5>Docteur Charles Michel Dray</h5>
-                                <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                <h5>Mina Pourfalla Nasserzare</h5>
+                                <p>Sage-femme liberale</p>
                             </div>
                             <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                         </div>
@@ -194,10 +192,10 @@
                     </div>
                     <div class="accordion accordion_desktop">
                         <div class="accordion__item-main">
-                            <div><img src="assets/img/specialists-1.png" alt=""></div>
+                            <div class="specialists__wrap_photo"><img src="assets/img/specialists-4.png" alt=""></div>
                             <div class="accordion__item-main-description">
-                                <h5>Docteur Charles Michel Dray</h5>
-                                <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                <h5>Isabelle Moneyron</h5>
+                                <p>Puéricultrice</p>
                             </div>
                             <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                         </div>
@@ -208,14 +206,14 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="underline-btn">VOIR TOUS LES COURS</a>
+            <a href="all-courses.html" class="underline-btn">VOIR TOUS LES COURS</a>
         </section>
-        <div class="advertising advertising__first">
+        <div class="advertising advertising__first" data-aos="fade-up">
             <p class="advertising__tagline">It is new step for your pregnant</p>
             <h3>The only childbirth class you need to take.</h3>
             <button class="advertising__btn">GET 50% DISCOUNT FOR THIS COURSE</button>
         </div>
-        <section class="coming-soon section">
+        <section class="coming-soon section" data-aos="fade-up">
             <div class="pos-element pos-element__pos-right"><img src="assets/img/coming-soon-pos-item.png" alt=""></div>
             <div class="container">
                 <h3>BIENTÔT DISPONIBLE</h3>
@@ -274,7 +272,7 @@
 
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container footer__wrap">
             <div>
                 <a href="#" class="header__logo footer__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
@@ -421,10 +419,10 @@
     </section>
     <section class="pop-up quick-view quick-view_authorized">
         <button class="pop-up__close"></button>
-        <div class="video-wrap">
-            <div class="video-wrap__play"><img src="assets/img/play.svg" alt=""></div>
-        </div>
         <div class="quick-view__container">
+            <div class="video-wrap">
+                <div class="video-wrap__play"><img src="assets/img/play.svg" alt=""></div>
+            </div>
             <div class="quick-view__title-wrap">
                 <h4>La naissance en conscience</h4>
                 <button class="double-btn double-btn_red">obtenir ce cours</button>    
@@ -470,7 +468,6 @@
                             <div class="course-item__title-wrap">
                                 <p class="course-item__title"><span>1.</span> Meet Your Instructor</p>
                                 <div class="video-time">
-                                    <div class="video-blocked"><img src="assets/img/blocked.svg" alt=""></div>
                                     <img src="assets/img/clock-svg.svg" alt="">
                                     <span><span>08:12</span>
                                 </div>
@@ -485,7 +482,7 @@
                         </div>
                     </div>
                     <div class="course-item">
-                        <div class=""><img src="assets/img/course2.png" alt=""></div>
+                        <div class=""><img src="assets/img/course2.png" alt=""><div class="video-blocked"><img src="assets/img/blocked.svg" alt=""></div></div>
                         <div class="course-item__content">
                             <div class="course-item__title-wrap">
                                 <p class="course-item__title"><span>2.</span>Consuming and criticizing culture</p>
@@ -504,7 +501,7 @@
                         </div>
                     </div>
                     <div class="course-item">
-                        <div class=""><img src="assets/img/course3.png" alt=""></div>
+                        <div class=""><img src="assets/img/course3.png" alt=""><div class="video-blocked"><img src="assets/img/blocked.svg" alt=""></div></div>
                         <div class="course-item__content">
                             <div class="course-item__title-wrap">
                                 <p class="course-item__title"><span>3.</span>Consuming and criticizing culture</p>
@@ -637,6 +634,9 @@
         </div>
     </section>
     <div class="blackout"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

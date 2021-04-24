@@ -72,8 +72,10 @@
             width: 90%;
         }
     }
-    button{
+    .main-btn {
         margin: 42px 0 256px;
+        position: relative;
+        z-index: 1;
     }
 }
 .description{

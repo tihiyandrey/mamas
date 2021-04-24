@@ -42,9 +42,9 @@
             width: auto !important;
             height: 100%;
         }
-        &:hover {
-            transform: scale(1.3);
-        }
+    }
+    &:hover img {
+        transform: scale(1.3);
     }
     &__content{
         position: absolute;

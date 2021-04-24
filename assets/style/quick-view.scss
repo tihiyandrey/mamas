@@ -3,7 +3,6 @@
     min-width: 720px;
     z-index: 6;
     height: 90vh;
-    overflow: auto;
     
     &.all-courses {
         display: block;
@@ -21,6 +20,8 @@
     }
     &__container{
         padding: 0 37px 33px 38px;
+        overflow: auto;
+        height: 85vh;
     }
     &__title-wrap{
         display: flex;
