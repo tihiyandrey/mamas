@@ -49,13 +49,14 @@
     @media screen and (max-width: 1300px){ 
         width: 100%;
         padding: 16px 20px 10px 20px;
-        height: fit-content;
+        height: 400px;
     }
     @media screen and (max-width: 767px){
         margin-bottom: 20px;
         width: 100%;
     }
     &:hover{
+        padding-top: 20px;
         .advantages-item__img{
             margin: -160px 0 30px;
             @media screen and (max-width: 1300px){

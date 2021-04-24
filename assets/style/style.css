@@ -1284,7 +1284,7 @@ header {
   .advantages-item {
     width: 100%;
     padding: 16px 20px 10px 20px;
-    height: fit-content;
+    height: 400px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1292,6 +1292,9 @@ header {
     margin-bottom: 20px;
     width: 100%;
   }
+}
+.advantages-item:hover {
+  padding-top: 20px;
 }
 .advantages-item:hover .advantages-item__img {
   margin: -160px 0 30px;
@@ -2281,7 +2284,7 @@ header {
 }
 .quick-view .video-wrap {
   position: relative;
-  height: 200px;
+  margin: 20px 0;
   width: 100%;
 }
 .quick-view .video-wrap__play {
