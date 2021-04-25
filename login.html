@@ -14,13 +14,15 @@
     
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="header container">
-            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             <div class="unauthorized">
-                <a href="#" class="header__link">Tous les cours</a>
-                <button class="header__link">Connexion</button>
-                <button class="unauthorized__get-started red-btn">Commencer</button>
+                <a href="all-courses.html" class="header__link">Tous les cours</a>
+                <a href="login.html" class="header__link">Connexion</a>
+                <div class="stiky-btn">
+                    <a href="create-account.html" class="unauthorized__get-started red-btn">Commencer</a>
+                </div>
             </div>
             <div class="authorized">
                 <a href="#" class="header__link">Tous les cours</a>
@@ -31,36 +33,32 @@
     <main class="login">
         <div class="container">
             <div class="login__container">
-                <h4 class="login__title">Login</h4>
+                <h4 class="login__title">Se connecter</h4>
                 <div class="login__social">
                     <div class="login__social__block login-social__block_google">
                         <img src="assets/img/logo-google.svg" alt="">
-                        <span>Login with Google</span>
+                        <span>SE CONNECTER AVEC GOOGLE</span>
                     </div>
                     <div class="login__social__block login-social__block_facebook">
                         <img src="assets/img/logo-facebook.svg" alt="">
-                        <span>LOGIN WITH FACEBOOK</span>
+                        <span>SE CONNECTER AVEC FACEBOOK</span>
                     </div>
                 </div>
-                <div class="login__separator">or</div>
+                <div class="login__separator">OU</div>
                 <form class="login__fields">
                     <div class="login__field">
-                        <input class="login__fields_email field__input" type="email" placeholder="Email Address">
+                        <input class="login__fields_email field__input" type="email" placeholder="ADRESSE EMAIL">
                     </div>
                     <div class="login__field">
-                        <input class="login__fields_password field__input" type="password" placeholder="Password">
+                        <input class="login__fields_password field__input" type="password" placeholder="MOT DE PASSE">
                     </div>
-                    <div class="login__field">
-                        <input class="login__fields_agree field__checkbox" type="checkbox" id="agree">
-                        <label class="login__fields_agree-label field__label" for="agree">I agree to the Terms of Use and Privacy Policy</label>
-                    </div>
-                    <button type="submit" class="login__fields_submit main-btn red-btn form-submit">LOGIN</button>
+                    <button type="submit" class="login__fields_submit main-btn red-btn form-submit">SE CONNECTER</button>
                 </form>
                 <div class="login__signin field__link">
-                    Need  an account? <a href="create-account.html">Sign up</a>
+                    Vous n’avez pas de compte? <a href="create-account.html">S’inscrire</a>
                 </div>
                 <div class="field__link">
-                    <a href="reset.html" class="linkto">Forgot your password?</a>
+                    <a href="reset.html" class="linkto">Mot de passe oublié?</a>
                 </div>
             </div>
         </div>

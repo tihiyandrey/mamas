@@ -14,13 +14,15 @@
     
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <div class="header container">
-            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             <div class="unauthorized">
-                <a href="#" class="header__link">Tous les cours</a>
-                <button class="header__link">Connexion</button>
-                <button class="unauthorized__get-started red-btn">Commencer</button>
+                <a href="all-courses.html" class="header__link">Tous les cours</a>
+                <a href="login.html" class="header__link">Connexion</a>
+                <div class="stiky-btn">
+                    <a href="create-account.html" class="unauthorized__get-started red-btn">Commencer</a>
+                </div>
             </div>
             <div class="authorized">
                 <a href="#" class="header__link">Tous les cours</a>
@@ -31,23 +33,23 @@
     <main class="plan">
         <div class="container">
             <div class="plan__container">
-                <h4 class="plan__title">Choose your plan</h4>
+                <h4 class="plan__title">Choisissez votre option</h4>
                 <div class="plan__fields">
                     <div class="plan__field">
                         <input class="field__radio" name="courses" type="radio" id="one_course">
                         <label for="one_course">
                             <div class="plan__field_check"></div>
                             <div class="plan__field_info">
-                                <div class="plan__field_title">Buy one course</div>
-                                <div class="plan__field_price">$120</div>
+                                <div class="plan__field_title">Obtenir un cours</div>
+                                <div class="plan__field_price">€120</div>
                             </div>
                             <div class="select" data-state="" id="course_one">
                                 <div class="select__title" data-default=" ">Module prenatal course</div>
                                 <div class="select__content">
                                     <input id="c1" class="select__input" type="radio" name="chose-course" />
-                                    <label for="c1" class="select__label">Module prenatal course</label>
+                                    <label for="c1" class="select__label">La naissance en conscience</label>
                                     <input id="c2" class="select__input" type="radio" name="chose-course" />
-                                    <label for="c2" class="select__label">Module prenatal course 2</label>
+                                    <label for="c2" class="select__label">Nos premières semaines</label>
                                 </div>
                             </div>
                             <div class="plan__field_description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur</div>
@@ -58,13 +60,13 @@
                         <label for="premium">
                             <div class="plan__field_check"></div>
                             <div class="plan__field_info">
-                                <div class="plan__field_title">Go to Premium</div>
-                                <div class="plan__field_price">$320</div>
+                                <div class="plan__field_title">l'Accès Premium</div>
+                                <div class="plan__field_price">€320</div>
                             </div>
                             <div class="plan__field_description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur</div>
                         </label>
                     </div>
-                    <a href="#" class="plan__fields_submit main-btn red-btn form-submit">CONTINUE</a>
+                    <a href="#" class="plan__fields_submit main-btn red-btn form-submit">CONTINUER</a>
                 </div>
             </div>
         </div>

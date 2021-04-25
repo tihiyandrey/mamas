@@ -2726,6 +2726,13 @@ header {
 .login__field {
   margin-bottom: 14px;
 }
+.login__field_checkbox {
+  display: flex;
+}
+.login__field_checkbox label {
+  width: 100%;
+  margin-top: -4px;
+}
 .login__signin {
   text-align: center;
   font-style: normal;
