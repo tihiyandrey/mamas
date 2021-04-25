@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Courses Page</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body class="course-page">
     <header>
         <div class="header container">
-            <a href="#" class="header__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+            <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             <div class="unauthorized">
                 <a href="#" class="header__link">Tous les cours</a>
                 <button class="header__link">Connexion</button>
@@ -31,25 +30,23 @@
     </header>
     <main class="quick-view all-courses">
         <div class="container">
-            <ul class="bread-crumbs">
-                <li class="bread-crumbs__link"><a href="index.html">Home</a></li>
-                <li class="bread-crumbs__link"><a href="all-courses.html">All Courses </a></li>
-                <li class="bread-crumbs__link"><a href="#">Module Prenatal </a></li> 
-            </ul> 
             <div class="course-page__container">
                 <div class="video-time">
-                    <span><span>19</span>video </span>
+                    <span><span>19</span>vidéo </span>
                     <img src="assets/img/clock-svg.svg" alt="">
                     <span><span>4h 14</span>total</span>
                 </div>
                 <h3>La naissance en conscience</h3>
                 <div class="video-wrap">
-                    <div class="video-wrap__play"><img src="assets/img/play.svg" alt=""></div>
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/541107805?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cours Intro"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="video-wrap__play">
+                        <!-- <img src="assets/img/play.svg" alt=""> -->
+                    </div>
                 </div>
                 <div class="">
                     <div class="quick-view__title-wrap">
                         <h4>La naissance en conscience</h4>
-                        <button class="double-btn double-btn_red">obtenir ce cours</button>    
+                        <a href="choose-plan.html" class="double-btn double-btn_red">obtenir ce cours</a>    
                     </div>
                     <hr>
                     <div class="quick-view__date-container">
@@ -60,17 +57,22 @@
                         <hr>
                     </div>
                     <div class="quick-view__description">
-                        <p class="quick-view__title-p">Class Info</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut consectetur adipiscing elit</p>
+                        <p>
+                            Encadré par plusieurs professionnels de santé et les experts  pluridisciplinaire, ce cours est orienté entièrement vers la future maman, dépassant les traditionnels protocoles médicaux. 
+                            Si une sage-femme ou un obstétricien peuvent aider une femme à mettre son bébé au monde, ce n’est toutefois pas à eux de vivre cette expérience. C’est la future maman qui accouche et qui dirige son bébé. Chaque femme est unique, et chaque accouchement l’est également.
+                            Nous sommes convaincus en effet que c’est la future maman qui doit orienter son accouchement, car personne ne sait mieux qu’elle ce dont elle a besoin.
+                            Ce cours vise donc à fournir l’ensemble des informations autour de la grossesse et de l’accouchement pour que vous puissiez préparer vous même et la naissance de votre enfant, en fonction de votre propre projet de naissance personnalisé. 
+                            Vous serez ainsi en mesure d’appréhender sereinement la venue au monde de votre enfant en le guidant grâce aux liens établis durant la grossesse.
+                        </p>
                         <div class="video-time">
-                            <span><span>19</span>video </span>
+                            <span><span>19</span>vidéo </span>
                             <img src="assets/img/clock-svg.svg" alt="">
                             <span><span>4h 14</span>total</span>
                         </div>
                         <hr>
                     </div>
                     <div class="quick-view__resources-wrap btn-link-block">
-                        <p class="btn-link-block__title">Resources <span>(3)</span> </p>
+                        <p class="btn-link-block__title">RESSOURCES <span>(3)</span> </p>
                         <div class="btn-link-block__wrap">
                             <a href="#" class="btn-link btn-link_bg">
                                 <div class="btn-link__title">Document_for_1_course.pdf</div>
@@ -88,7 +90,7 @@
                         <hr>
                     </div>
                     <div class="course">
-                        <p class="quick-view__title-p">Course programm</p>
+                        <p class="quick-view__title-p">PROGRAMME DU COURS</p>
                         <div class="course__wrap">
                             <div class="course-item">
                                 <div class="">
@@ -136,7 +138,7 @@
                             <div class="course-item">
                                 <div class="">
                                     <div class="video-blocked"><img src="assets/img/blocked.svg" alt=""></div>
-                                    <img src="assets/img/course-page2.png" alt=""></div>
+                                    <img src="assets/img/course-page4.png" alt=""></div>
                                 <div class="course-item__content">
                                     <div class="course-item__title-wrap">
                                         <p class="course-item__title"><span>3.</span>Consuming and criticizing culture</p>
@@ -176,7 +178,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="underline-btn">View all VIDEO</a>
+                        <a href="all-courses.html" class="underline-btn">VOIR TOUS LES VIDÉOS</a>
                         <hr>
                     </div>
                     <section class="specialists">
@@ -343,41 +345,46 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="underline-btn">view all courses</a>
+            <a href="all-courses.html" class="underline-btn">VOIR TOUS LES COURS</a>
 
         </section>
     </main>
+    <div class="sticky-bar">
+        <div class="sticky-bar__block container">
+            <div class="sticky-bar__title">DÉCOUVRIR LES COURS</div>
+            <a href="all-courses.html" class="red-btn">OBTENIR LE PASS</a>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container footer__wrap">
             <div>
-                <a href="#" class="header__logo footer__logo"><img src="assets/img/main-logo.svg" alt="logo"></a>
+                <a href="#" class="header__logo footer__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             </div>
             <p class="footer__signature">© 2021 L'école des Futures Mamans</p>
             <div class="footer__wrap-link">
                 <div class="footer__wrap-list">
-                    <p>COURSES</p>
+                    <p>Découvrir</p>
                     <ul class="footer__list-wrap">
-                        <li class="footer__list-item"><a href="#">All Courses</a></li>
-                        <li class="footer__list-item"><a href="#">Module prenatal</a></li>
-                        <li class="footer__list-item"><a href="#">Module postnatal</a></li>
-                        <li class="footer__list-item"><a href="#">Available soon</a></li>
+                        <li class="footer__list-item"><a href="#">Les cours</a></li>
+                        <li class="footer__list-item"><a href="#">Abonnements</a></li>
+                        <li class="footer__list-item"><a href="#">Support</a></li>
+                        <li class="footer__list-item"><a href="#">Communauté</a></li>
                     </ul>
                 </div>
                 <div class="footer__wrap-list">
-                    <p>COMPANY</p>
+                    <p>A propos</p>
                     <ul class="footer__list-wrap">
-                        <li class="footer__list-item"><a href="#">FAQ’s</a></li>
-                        <li class="footer__list-item"><a href="#">Terms of Use</a></li>
-                        <li class="footer__list-item"><a href="#"></a></li>
-                        <li class="footer__list-item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer__list-item"><a href="#">CGV</a></li>
+                        <li class="footer__list-item"><a href="#">Confidentialité</a></li>
+                        <li class="footer__list-item"><a href="#">Mentions légales</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer__wrap-list footer__wrap-social">
-                <p>Join Our Newsletter</p>
+                <p>S'inscrire  à la Newsletter</p>
                 <form action="#" class="footer__form">
-                    <input type="mail" placeholder="Enter Email Address">
+                    <input type="mail" placeholder="Votre adresse email">
                     <button>Submit</button>
                 </form>
                 <div class="socila-wrap">
@@ -484,10 +491,19 @@
         <p>We will send you an email when the course is opened</p>
         <form action="#">
             <input type="mail" placeholder="Enter Email Address">
-            <button class="double-btn double-btn_red">remind me</button>
+            <button class="double-btn double-btn_red open-thank-you">remind me</button>
         </form>
     </section>
+    <section class="pop-up pop-up-remind pop-up-thank-you">
+        <button class="pop-up__close"></button>
+        <p>Thank you</p>
+        <span>While you are waiting - check our opened cources. We sure you may find something interesting there too.</span>
+        <a href="all-courses.html" class="double-btn double-btn_red">VIEW OTHER COURSES</a>
+    </section>
     <div class="blackout"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

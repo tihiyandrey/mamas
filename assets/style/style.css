@@ -942,14 +942,15 @@ header {
 .banner-block__content {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 50%;
   width: 100%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .banner-block__content {
     position: relative;
+    transform: translate(-50%, 0%);
   }
 }
 .banner-block__content h2 {
