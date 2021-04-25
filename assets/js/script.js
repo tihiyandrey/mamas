@@ -192,13 +192,14 @@ if(openThankYou) {
     });
 }
 
-
 $(window).scroll(function() {
      let height = $(window).scrollTop();
     if(height > 100){
         $('.stiky-btn').addClass('stiky-btn__show');
+        $('.sticky-bar').addClass('active');
     } else{
         $('.stiky-btn').removeClass('stiky-btn__show');
+        $('.sticky-bar').removeClass('active');
     }
 });
 
@@ -216,8 +217,8 @@ AOS.init({
   
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 200, // offset (in px) from the original trigger point
-    delay: 50, // values from 0 to 3000, with step 50ms
-    duration: 1000, // values from 0 to 3000, with step 50ms
+    delay: 500, // values from 0 to 3000, with step 50ms
+    duration: 2000, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
