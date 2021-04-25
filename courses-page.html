@@ -12,14 +12,14 @@
     <title>Courses Page</title>
 </head>
 <body class="course-page">
-    <header>
+    <header data-aos="fade-down">
         <div class="header container">
-            <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
+            <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             <div class="unauthorized">
-                <a href="#" class="header__link">Tous les cours</a>
-                <button class="header__link">Connexion</button>
+                <a href="all-courses.html" class="header__link">Tous les cours</a>
+                <a href="login.html" class="header__link">Connexion</a>
                 <div class="stiky-btn">
-                    <button class="unauthorized__get-started red-btn">Commencer</button>
+                    <a href="create-account.html" class="unauthorized__get-started red-btn">Commencer</a>
                 </div>
             </div>
             <div class="authorized">
@@ -30,33 +30,33 @@
     </header>
     <main class="quick-view all-courses">
         <div class="container">
-            <div class="course-page__container">
+            <div class="course-page__container" data-aos="fade-up">
                 <div class="video-time">
                     <span><span>19</span>vidéo </span>
                     <img src="assets/img/clock-svg.svg" alt="">
                     <span><span>4h 14</span>total</span>
                 </div>
                 <h3>La naissance en conscience</h3>
-                <div class="video-wrap">
+                <div class="video-wrap" data-aos="fade-up">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/541107805?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Cours Intro"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                     <div class="video-wrap__play">
                         <!-- <img src="assets/img/play.svg" alt=""> -->
                     </div>
                 </div>
                 <div class="">
-                    <div class="quick-view__title-wrap">
+                    <div class="quick-view__title-wrap" data-aos="fade-up">
                         <h4>La naissance en conscience</h4>
                         <a href="choose-plan.html" class="double-btn double-btn_red">obtenir ce cours</a>    
                     </div>
                     <hr>
-                    <div class="quick-view__date-container">
+                    <div class="quick-view__date-container" data-aos="fade-up">
                         <div class="quick-view__date-wrap">
                             <div class="banner-block__img-purchased">purchased</div>
                             <div class="quick-view__date"><span>FOR</span> 27 december 2021</div>
                         </div>
                         <hr>
                     </div>
-                    <div class="quick-view__description">
+                    <div class="quick-view__description" data-aos="fade-up">
                         <p>
                             Encadré par plusieurs professionnels de santé et les experts  pluridisciplinaire, ce cours est orienté entièrement vers la future maman, dépassant les traditionnels protocoles médicaux. 
                             Si une sage-femme ou un obstétricien peuvent aider une femme à mettre son bébé au monde, ce n’est toutefois pas à eux de vivre cette expérience. C’est la future maman qui accouche et qui dirige son bébé. Chaque femme est unique, et chaque accouchement l’est également.
@@ -71,7 +71,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="quick-view__resources-wrap btn-link-block">
+                    <div class="quick-view__resources-wrap btn-link-block" data-aos="fade-up">
                         <p class="btn-link-block__title">RESSOURCES <span>(3)</span> </p>
                         <div class="btn-link-block__wrap">
                             <a href="#" class="btn-link btn-link_bg">
@@ -89,7 +89,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div class="course">
+                    <div class="course" data-aos="fade-up">
                         <p class="quick-view__title-p">PROGRAMME DU COURS</p>
                         <div class="course__wrap">
                             <div class="course-item">
@@ -181,13 +181,13 @@
                         <a href="all-courses.html" class="underline-btn">VOIR TOUS LES VIDÉOS</a>
                         <hr>
                     </div>
-                    <section class="specialists">
+                    <section class="specialists" data-aos="fade-up">
                         <div class="specialists__wrap">
                             <p class="quick-view__title-p">Related instructors</p>
                             <div class="specialists__wrap-content">
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
-                                        <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                        <div class="specialists__wrap_photo"><img src="assets/img/specialists-1.png" alt=""></div>
                                         <div class="accordion__item-main-description">
                                             <h5>Docteur Charles Michel Dray</h5>
                                             <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
@@ -201,10 +201,10 @@
                                 </div>
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
-                                        <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                        <div class="specialists__wrap_photo"><img src="assets/img/specialists-2.png" alt=""></div>
                                         <div class="accordion__item-main-description">
-                                            <h5>Docteur Charles Michel Dray</h5>
-                                            <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                            <h5>Amelie Menuey Catrou</h5>
+                                            <p>Sage-femme liberale, hypnothérapeute et sexologue</p>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
@@ -215,10 +215,10 @@
                                 </div>
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
-                                        <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                        <div class="specialists__wrap_photo"><img src="assets/img/specialists-3.png" alt=""></div>
                                         <div class="accordion__item-main-description">
-                                            <h5>Docteur Charles Michel Dray</h5>
-                                            <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                            <h5>Mina Pourfalla Nasserzare</h5>
+                                            <p>Sage-femme liberale</p>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
@@ -229,10 +229,10 @@
                                 </div>
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
-                                        <div><img src="assets/img/specialists-1.png" alt=""></div>
+                                        <div class="specialists__wrap_photo"><img src="assets/img/specialists-4.png" alt=""></div>
                                         <div class="accordion__item-main-description">
-                                            <h5>Docteur Charles Michel Dray</h5>
-                                            <p>Procréation Médicalement Assistée. Chirurgien Gynécologue-Accoucheur</p>
+                                            <h5>Isabelle Moneyron</h5>
+                                            <p>Puéricultrice</p>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
@@ -245,41 +245,75 @@
                         </div>
                         <hr>
                     </section>
-                    <section class="questions">
+                    <section class="questions" data-aos="fade-up">
                         <div class="specialists__wrap">
-                            <p class="quick-view__title-p">Frequently asked questions</p>
+                            <p class="quick-view__title-p">CE QUE VOUS ALLEZ APPRENDRE</p>
                             <div class="specialists__wrap-content">
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
                                         <div class="accordion__item-main-description">
-                                            <h5><span>1.</span>Meet Your Instructor</h5>
+                                            <h5><span>1.</span>Ce que vous attend lors de chaque trimestre de grossesse</h5>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
                                     <div class="accordion__item-second">
-                                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                                        <p>Quels sont les signes inquiétants et ceux à propos desquels il ne faut pas s'inquiéter ainsi que les changements psychologiques qui surviennent pendant la grossesse. Vous obtiendrez des astuces pour prendre soin de votre corps et conserver une bonne forme mentale et physique</p>                
                                     </div>
                                 </div>
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
                                         <div class="accordion__item-main-description">
-                                            <h5><span>2.</span>Challenging ideas and changing minds</h5>
+                                            <h5><span>2.</span>Préparer le projet de naissance personne</h5>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
                                     <div class="accordion__item-second">
-                                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                                        <p>avec tous les détails et les différents scénarios possibles, pour que, le jour J, vous ne soyez pas prise au dépourvu et puissiez garder le contrôle sur votre accouchement</p>                
                                     </div>
                                 </div>
                                 <div class="accordion accordion_default">
                                     <div class="accordion__item-main">
                                         <div class="accordion__item-main-description">
-                                            <h5><span>3.</span>Consuming and criticizing culture</h5>
+                                            <h5><span>3.</span>Comment réduire l’anxiété et le stress</h5>
                                         </div>
                                         <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
                                     </div>
                                     <div class="accordion__item-second">
-                                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incidionsectetur adipiscing elit, sed do eiusmod tempor incididunt elit, sed do eiusmod tempor incididunt.</p>                
+                                        <p>Vous allez découvrir EXACTEMENT l’expérience que vous vous préparez à vivre avec tous les options possibles</p>                
+                                    </div>
+                                </div>
+                                <div class="accordion accordion_default">
+                                    <div class="accordion__item-main">
+                                        <div class="accordion__item-main-description">
+                                            <h5><span>4.</span>Apprendre à ne pas avoir peur et à gérer la douleur</h5>
+                                        </div>
+                                        <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                                    </div>
+                                    <div class="accordion__item-second">
+                                        <p>Ce n’est pas si rare d’entendre des femmes qui ont eu un orgasme à l'accouchement ou qui
+                                            n'ont pas senti la douleur. C'est tout à fait possible avec toute l'information et les astuces que vous obtiendrez avec ce cours.</p>                
+                                    </div>
+                                </div>
+                                <div class="accordion accordion_default">
+                                    <div class="accordion__item-main">
+                                        <div class="accordion__item-main-description">
+                                            <h5><span>5.</span>Les signes précurseurs de l’accouchement</h5>
+                                        </div>
+                                        <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                                    </div>
+                                    <div class="accordion__item-second">
+                                        <p>Nous allons bien au-delà de la question "quand allez à la maternité". Nos professionnels de santé vous expliquent en tous les détails tous les signes qui vous arriveront bien avant le départ à la maternité, pour que vous puissiez garder votre calme et  confiance</p>                
+                                    </div>
+                                </div>
+                                <div class="accordion accordion_default">
+                                    <div class="accordion__item-main">
+                                        <div class="accordion__item-main-description">
+                                            <h5><span>6.</span>Le déroulement de l'accouchement en details</h5>
+                                        </div>
+                                        <div class="accordion__open-btn"><img src="assets/img/specialists-open.svg" alt=""></div>
+                                    </div>
+                                    <div class="accordion__item-second">
+                                        <p>Les trois phases de l’accouchement : ce qui se passe dans le corps, comment s’aider, le rôle de l’homme, les techniques de relaxation, les poses, les pousses, l’hypno-accouchement, la « golden hour ». Mais aussi nos professionnels de santé vous expliquent les différentes interventions médicales possible et les choix dont vous pouvez discuter en avance</p>                
                                     </div>
                                 </div>
                             </div>
@@ -290,17 +324,17 @@
         </div>
         <section class="coming-soon section">
             <div class="all-courses__title">
-                <h3>available soon</h3>
+                <h3>BIENTÔT DISPONIBLE</h3>
             </div>
             <div class="pos-element pos-element__pos-right"><img src="assets/img/coming-soon-pos-item.png" alt=""></div>
             <div class="container">
-                <div class="coming-soon__wrap">
+                <div class="coming-soon__wrap" data-aos="fade-up">
                     <div class="coming-soon__item coming-soon-item">
                         <img src="assets/img/coming-soon-1.png" alt="">
                         <div class="coming-soon-item__content">
                             <h4>Notre premier année des parents</h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                     <div class="coming-soon__item coming-soon-item">
@@ -308,7 +342,7 @@
                         <div class="coming-soon-item__content">
                             <h4>Yoga-prenatal</h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                     <div class="coming-soon__item coming-soon-item">
@@ -316,7 +350,7 @@
                         <div class="coming-soon-item__content">
                             <h4>Nutrition</h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                     <div class="coming-soon__item coming-soon-item">
@@ -324,7 +358,7 @@
                         <div class="coming-soon-item__content">
                             <h4>Yoga-postnatal </h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                     <div class="coming-soon__item coming-soon-item">
@@ -332,7 +366,7 @@
                         <div class="coming-soon-item__content">
                             <h4>La vie après accouchement</h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                     <div class="coming-soon__item coming-soon-item">
@@ -340,7 +374,7 @@
                         <div class="coming-soon-item__content">
                             <h4>Allaitement </h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>                            
-                            <button class="double-btn double-btn_white open-remind">remind me</button>
+                            <button class="double-btn double-btn_white open-remind">NOTIFIEZ MO</button>
                         </div>
                     </div>
                 </div>

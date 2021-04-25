@@ -8,6 +8,15 @@
         margin: 0 10px 20px;
         height: fit-content;
     }
+    .specialists__wrap_photo img  {
+        transform: scale(1);
+        transition: 1.3s all;
+    }
+    &:hover {
+        .specialists__wrap_photo img {
+            transform: scale(1.3);
+        }
+    }
     &_open{
         height: fit-content!important;    
     }

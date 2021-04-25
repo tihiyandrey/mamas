@@ -375,6 +375,7 @@ button {
   display: none;
   top: 0;
   opacity: 0.7;
+  z-index: 1;
 }
 .blackout_active {
   display: block;
@@ -1476,13 +1477,6 @@ header {
     width: 100%;
   }
 }
-.specialists .accordion_desktop .accordion__item-main .specialists__wrap_photo img {
-  transform: scale(1);
-  transition: 1.3s all;
-}
-.specialists .accordion_desktop .accordion__item-main:hover .specialists__wrap_photo img {
-  transform: scale(1.3);
-}
 @media screen and (max-width: 1300px) {
   .specialists .accordion_desktop .accordion__item-main-description {
     padding: 11px 0 11px 10px;
@@ -2112,6 +2106,7 @@ header {
   width: 51%;
   position: relative;
   height: 420px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1300px) {
   .all-courses .banner-block__bg .banner-block__img {
@@ -2128,6 +2123,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  transform: scale(1);
+  transition: all 1.5s;
 }
 @media screen and (max-width: 1000px) {
   .all-courses .banner-block__bg .banner-block__img img {
@@ -2202,6 +2199,9 @@ header {
   .all-courses .banner-block__bg .banner-block__content .banner-block__wrap-btn button {
     margin: 0 0 20px 0;
   }
+}
+.all-courses .banner-block__bg:hover .banner-block__img img {
+  transform: scale(1.2);
 }
 .all-courses .banner-block__img-purchased {
   display: none;
@@ -2543,6 +2543,13 @@ header {
     margin: 0 10px 20px;
     height: fit-content;
   }
+}
+.accordion .specialists__wrap_photo img {
+  transform: scale(1);
+  transition: 1.3s all;
+}
+.accordion:hover .specialists__wrap_photo img {
+  transform: scale(1.3);
 }
 .accordion_open {
   height: fit-content !important;

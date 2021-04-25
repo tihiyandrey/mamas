@@ -159,6 +159,7 @@ button{
     display: none;
     top: 0;
     opacity: 0.7;
+    z-index: 1;
     &_active{
         display: block;
     }
