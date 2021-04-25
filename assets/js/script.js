@@ -225,3 +225,15 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
 });
+$(document).ready(function() {
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".pop-up"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            popUp.forEach(el => {
+                el.classList.remove('pop-up_active');
+            });
+            blackout.classList.remove('blackout_active');
+        }
+    });
+});
