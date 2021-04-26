@@ -237,3 +237,9 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function() {
+    $(".vimeo").fancybox({
+        type: 'iframe',
+        fitToView : false
+    });
+});

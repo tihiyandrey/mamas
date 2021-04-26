@@ -31,7 +31,7 @@
      }
      .video-time{
          justify-content: center;
-         margin: 52px 0 20px;
+         margin: 0px 0 20px;
      }
      h3{
          margin-bottom: 38px;
@@ -54,5 +54,8 @@
           color: #232120;
           font-weight: 400;
       }
-    
+    a[data-fancybox] {
+        width: 100%;
+        display: inline-block;
+    }
 }

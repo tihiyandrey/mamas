@@ -22,6 +22,7 @@
             justify-content: space-between;
             background: #FFFFFF;
             border-radius: 4px;
+            align-items: center;
             @media screen and (max-width: 1000px){
                 flex-direction: column;
             }
@@ -30,21 +31,25 @@
                 position: relative;
                 height: 420px;
                 overflow: hidden;
-                @media screen and (max-width: 1300px){
-                   height: 313px;
+                @media all and (max-width: 1300px) and (min-width: 1000px) {
+                    height: 350px;
                 }
+                // @media screen and (max-width: 1300px){
+                //    height: 313px;
+                // }
                 @media screen and (max-width: 1000px){
                     width: 100%;
                     height: auto;
                 }
                 img{
                     position: absolute;
-                    top: 0;
+                    top: 50%;
                     left: 0;
-                    transform: scale(1);
+                    transform: scale(1) translate(0, -50%);
                     transition: all 1.5s;
                     @media screen and (max-width: 1000px){
                         position: static;
+                        transform: scale(1) translate(0, 0%);
                     }
                 }
             }
@@ -54,7 +59,7 @@
                 align-items: baseline;
                 position: static;
                 text-align: left;
-                padding: 80px 70px 0px 85px;
+                padding: 0px 70px 0px 85px;
                 width: 49%;
                 box-sizing: border-box;
                 transform:translate(0,0);
@@ -63,7 +68,7 @@
                 -ms-transform:translate(0,0);
                 -o-transform:translate(0,0);
                 @media screen and (max-width: 1300px){
-                    padding: 25px 40px 0px 40px;
+                    padding: 0px 40px 0px 40px;
                 }
                  @media screen and (max-width: 1000px){
                     width: 100%;
@@ -108,7 +113,10 @@
             }
             &:hover {
                 .banner-block__img img {
-                    transform: scale(1.2);
+                    transform: scale(1.2) translate(0, -50%);
+                    @media all and (max-width: 1000px) {
+                        transform: scale(1.2) translate(0, 0);
+                    }
                 }
             }
         }
@@ -119,6 +127,10 @@
             right: 20px;
             top: 20px;
             z-index: 5;
+
+            @media all and (max-width: 1300px) and (min-width: 1000px) {
+                top:40px;
+            }
         }
         &_purchased{
             .video-blocked{
@@ -174,6 +186,12 @@
         @media screen and (max-width: 1300px){
             display: none;
         }
+    }
+    .banner-block__img-purchased {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
     }
 }
 .video-blocked{

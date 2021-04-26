@@ -2096,6 +2096,7 @@ header {
   justify-content: space-between;
   background: #FFFFFF;
   border-radius: 4px;
+  align-items: center;
 }
 @media screen and (max-width: 1000px) {
   .all-courses .banner-block__bg {
@@ -2108,9 +2109,9 @@ header {
   height: 420px;
   overflow: hidden;
 }
-@media screen and (max-width: 1300px) {
+@media all and (max-width: 1300px) and (min-width: 1000px) {
   .all-courses .banner-block__bg .banner-block__img {
-    height: 313px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2121,14 +2122,15 @@ header {
 }
 .all-courses .banner-block__bg .banner-block__img img {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  transform: scale(1);
+  transform: scale(1) translate(0, -50%);
   transition: all 1.5s;
 }
 @media screen and (max-width: 1000px) {
   .all-courses .banner-block__bg .banner-block__img img {
     position: static;
+    transform: scale(1) translate(0, 0%);
   }
 }
 .all-courses .banner-block__bg .banner-block__content {
@@ -2137,7 +2139,7 @@ header {
   align-items: baseline;
   position: static;
   text-align: left;
-  padding: 80px 70px 0px 85px;
+  padding: 0px 70px 0px 85px;
   width: 49%;
   box-sizing: border-box;
   transform: translate(0, 0);
@@ -2148,7 +2150,7 @@ header {
 }
 @media screen and (max-width: 1300px) {
   .all-courses .banner-block__bg .banner-block__content {
-    padding: 25px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2201,7 +2203,12 @@ header {
   }
 }
 .all-courses .banner-block__bg:hover .banner-block__img img {
-  transform: scale(1.2);
+  transform: scale(1.2) translate(0, -50%);
+}
+@media all and (max-width: 1000px) {
+  .all-courses .banner-block__bg:hover .banner-block__img img {
+    transform: scale(1.2) translate(0, 0);
+  }
 }
 .all-courses .banner-block__img-purchased {
   display: none;
@@ -2209,6 +2216,11 @@ header {
   right: 20px;
   top: 20px;
   z-index: 5;
+}
+@media all and (max-width: 1300px) and (min-width: 1000px) {
+  .all-courses .banner-block__img-purchased {
+    top: 40px;
+  }
 }
 .all-courses .banner-block_purchased .video-blocked {
   display: none;
@@ -2263,6 +2275,12 @@ header {
   .all-courses__title-p {
     display: none;
   }
+}
+.all-courses .banner-block__img-purchased {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
 }
 
 .video-blocked {
@@ -2342,7 +2360,7 @@ header {
   align-items: center;
 }
 .quick-view__date-container {
-  display: none;
+  display: block;
 }
 .quick-view__date {
   line-height: 19px;
@@ -2374,10 +2392,12 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+  align-items: center;
 }
 .quick-view .course .course-item > :nth-child(1) {
   width: 26%;
   position: relative;
+  display: flex;
 }
 .quick-view .course .course-item > :nth-child(1) img {
   width: 100%;
@@ -2528,7 +2548,7 @@ header {
   display: block;
 }
 .quick-view_authorized .quick-view__title-wrap button {
-  display: none;
+  display: block;
 }
 
 .accordion {
@@ -3227,7 +3247,7 @@ header {
 }
 .course-page .video-time {
   justify-content: center;
-  margin: 52px 0 20px;
+  margin: 0px 0 20px;
 }
 .course-page h3 {
   margin-bottom: 38px;
@@ -3251,6 +3271,10 @@ header {
   font-size: 15px;
   color: #232120;
   font-weight: 400;
+}
+.course-page a[data-fancybox] {
+  width: 100%;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

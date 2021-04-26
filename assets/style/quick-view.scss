@@ -52,7 +52,7 @@
         align-items: center;
     }
     &__date-container{
-        display: none;
+        display: block;
     }
     &__date{
         @include fontz (19px, normal, normal);
@@ -83,9 +83,11 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 12px;
+            align-items: center;
             >:nth-child(1){
                 width: 26%;
                 position: relative;
+                display: flex;
                 img{
                     width: 100%;
                 }
@@ -246,7 +248,7 @@
         }
         &__title-wrap{
             button{
-                display: none;
+                display: block;
             }
         }
     }
