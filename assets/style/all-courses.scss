@@ -137,7 +137,7 @@
                 display: none;
             }
             .banner-block__img-purchased{
-                display: block;
+                display: inline-block;
             }
             .banner-block__wrap-btn{
                 display: none;
@@ -187,11 +187,13 @@
             display: none;
         }
     }
-    .banner-block__img-purchased {
-        position: relative;
-        top: 0;
-        left: 0;
-        display: block;
+    &.quick-view {
+        .banner-block__img-purchased {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: inline-block;
+        }
     }
 }
 .video-blocked{
