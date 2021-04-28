@@ -19,6 +19,9 @@
         }
         &_photo {
             overflow: hidden;
+            width: 30%;
+            min-width: 90px;
+            max-width: 120px;
         }
     }
     .accordion_desktop{

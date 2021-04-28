@@ -1448,6 +1448,9 @@ header {
 }
 .specialists__wrap_photo {
   overflow: hidden;
+  width: 30%;
+  min-width: 90px;
+  max-width: 120px;
 }
 .specialists .accordion_desktop {
   width: 42.8%;
