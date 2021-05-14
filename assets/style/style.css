@@ -683,6 +683,37 @@ header {
     font-size: 12px;
   }
 }
+.header .menu {
+  display: flex;
+}
+.header .menu li {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+}
+.header .menu li:hover .sub-menu {
+  display: block;
+}
+.header .sub-menu {
+  top: 30px;
+  position: absolute;
+  left: 30px;
+  width: fit-content;
+  background: #fff;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+.header .sub-menu:hover {
+  display: block;
+}
+.header .sub-menu li {
+  margin: 5px 0;
+}
+.header .sub-menu li a:hover {
+  color: #CB5050;
+}
 
 .unauthorized__get-started {
   width: 110px;

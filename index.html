@@ -16,14 +16,32 @@
         <div class="header container">
             <a href="index.html" class="header__logo"><img src="assets/img/logo.svg" alt="logo"></a>
             <div class="unauthorized">
-                <a href="all-courses.html" class="header__link">Tous les cours</a>
-                <a href="login.html" class="header__link">Connexion</a>
+                <ul class="menu">
+                    <li>
+                        <a href="all-courses.html" class="header__link">Tous les cours</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Mes commandes</a></li>
+                            <li><a href="#">Abonnement</a></li>
+                            <li><a href="#">Profil</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html" class="header__link">Connexion</a></li>
+                </ul>
                 <div class="stiky-btn">
                     <a href="create-account.html" class="unauthorized__get-started red-btn">Commencer</a>
                 </div>
             </div>
             <div class="authorized">
-                <a href="#" class="header__link">Tous les cours</a>
+                <ul class="menu">
+                    <li>
+                        <a href="all-courses.html" class="header__link">Tous les cours</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Mes commandes</a></li>
+                            <li><a href="#">Abonnement</a></li>
+                            <li><a href="#">Profil</a></li>
+                        </ul>
+                    </li>
+                </ul>
                 <button class="header__link">Connexion</button>
             </div>
         </div>

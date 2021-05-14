@@ -43,6 +43,39 @@ header{
             font-size: 12px;
         }
     }
+    .menu {
+        display: flex;
+        li {
+            position: relative;
+            height: 30px;
+            line-height: 30px;
+            &:hover {
+                .sub-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+    .sub-menu {
+        top: 30px;
+        position: absolute;
+        left: 30px;
+        width: fit-content;
+        background: #fff;
+        padding: 5px 10px;
+        border: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        z-index: 1;
+        &:hover {
+            display: block;
+        }
+        li {
+            margin: 5px 0;
+            a:hover {
+                color: #CB5050;
+            }
+        }
+    }
 }
 .unauthorized{
     &__get-started{
