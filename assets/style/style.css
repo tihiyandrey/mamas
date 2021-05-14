@@ -715,6 +715,9 @@ header {
   color: #CB5050;
 }
 
+.unauthorized {
+  display: flex;
+}
 .unauthorized__get-started {
   width: 110px;
   margin-left: 30px;

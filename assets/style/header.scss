@@ -78,6 +78,7 @@ header{
     }
 }
 .unauthorized{
+    display: flex;
     &__get-started{
         width: 110px;
         margin-left: 30px;
