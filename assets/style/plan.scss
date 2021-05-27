@@ -32,6 +32,33 @@
     &__field {
         margin-bottom: 20px;
         position: relative;
+        &_paymethod {
+            display: flex;
+            align-items: center;
+            &-item {
+                position: relative;
+                margin-left: 40px;
+                .plan__field_check {
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid rgba(114, 99, 100, 0.1);
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(0px, -50%);
+                    left: -30px;
+                }
+            }
+        }
+        &_amount {
+            display: flex;
+            justify-content: space-between;
+            .select {
+                width: 80%;
+                margin: 0;
+            }
+        }
         & > label {
             display: inline-block;
             border: 2px solid rgba(114, 99, 100, 0.1);
@@ -46,14 +73,14 @@
             }
         }
         &_info {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
             margin-bottom: 12px;
-            @media all and (max-width: 425px) { 
-                flex-direction: column;
-                align-items: baseline;
-            }
+            // @media all and (max-width: 425px) { 
+            //     flex-direction: column;
+            //     align-items: baseline;
+            // }
         }
         &_title {
             font-family: "FontsFree", sans-serif;
@@ -110,7 +137,7 @@
         & + label  {
             background: #FFFFFF;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
-            .plan__field_check {
+            & > .plan__field_check {
                 border: 2px solid #CB5050;
                 &:after {
                     content: '';
